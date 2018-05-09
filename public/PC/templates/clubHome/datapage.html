@@ -1,0 +1,25 @@
+<div class="xt-clubhome-datapage .container">
+    <div class="col-xs-12">
+        <div class="messagebox">
+            <div class="row message"  ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-repeat="i in data|orderBy:'time':true">
+                <div class="row">
+                    <div class="  xt-flex message-headline">
+                        <div class="message-headline-title">{{i.title}}</div>
+                        <div class="xt-flex-grow"></div>
+                        <div class="message-headline-time">{{showDate(i.time)}}</div>
+                    </div>
+
+                    <div class="col-xs-12 xt-flex message-content">
+                        <div class="xt-text" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()"
+                             ng-bind-html="i.content | to_trusted"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="message-download" ng-show="hoverEdit" ng-click="download(i)">
+                        <span class="fa fa-download"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

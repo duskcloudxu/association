@@ -1,0 +1,11 @@
+<ion-view view-title="ActivityInform">
+    <ion-content class="chy-activityInform">
+        <h3>{{activity.title}}</h3>
+        <div class="activityInform-tips">
+            <p>{{activity.time | myDateTime}}</p>
+            <p>{{activity.place}}</p>
+        </div>
+        <div class="activityInform-content item-text-wrap"  ng-bind-html="activity.content | to_trusted"></div>
+        <div class="activityInform-welcome">{{activity.associationName}} 期待您的参与!</div>
+    </ion-content>
+</ion-view>

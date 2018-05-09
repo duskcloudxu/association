@@ -1,0 +1,117 @@
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.chy-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-animation: 1s slideIn;
+}
+.chy-box .chy-item:first-child,
+.chy-box .chy-item:nth-child(6) {
+  border-top: 2px solid #FFAC13;
+  border-bottom: 5px solid #FFAC13;
+}
+.chy-box .chy-item:nth-child(2),
+.chy-box .chy-item:nth-child(7) {
+  border-top: 1px solid #83C44E;
+  border-bottom: 5px solid;
+}
+.chy-box .chy-item:nth-child(3),
+.chy-box .chy-item:nth-child(8) {
+  border-top: 1px solid #2196F3;
+  border-bottom: 5px solid #2196F3;
+}
+.chy-box .chy-item:nth-child(4),
+.chy-box .chy-item:nth-child(9) {
+  border-top: 1px solid #ffcfb0;
+  border-bottom: 5px solid #ffcfb0;
+}
+.chy-box .chy-item:nth-child(5),
+.chy-box .chy-item:nth-child(10) {
+  border-top: 1px solid #00C0A5;
+  border-bottom: 5px solid #00C0A5;
+}
+.chy-box .chy-item:hover:first-child,
+.chy-box .chy-item:hover:nth-child(6) {
+  border-top: 2px solid #FFAC13;
+  border-bottom: 5px solid #FFAC13;
+}
+.chy-box .chy-item:hover:nth-child(2),
+.chy-box .chy-item:hover:nth-child(7) {
+  border-top: 2px solid #83C44E;
+  border-bottom: 5px solid #83C44E;
+}
+.chy-box .chy-item:hover:nth-child(3),
+.chy-box .chy-item:hover:nth-child(8) {
+  border-top: 2px solid #2196F3;
+  border-bottom: 5px solid #2196F3;
+}
+.chy-box .chy-item:hover:nth-child(4),
+.chy-box .chy-item:hover:nth-child(9) {
+  border-top: 2px solid #ffcfb0;
+  border-bottom: 5px solid #ffcfb0;
+}
+.chy-box .chy-item:hover:nth-child(5),
+.chy-box .chy-item:hover:nth-child(10) {
+  border-top: 2px solid #00C0A5;
+  border-bottom: 5px solid #00C0A5;
+}
+.chy-box .chy-item {
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  margin: -10px 0 20px 20px;
+  transition: all linear 0.5s;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.chy-box .chy-item h3 {
+  margin-top: 10px;
+  color: #3D8AFF;
+  padding: 10px;
+}
+.chy-box .chy-item .chy-content {
+  border-radius: 5px;
+  transition: max-height 1s;
+  background: #e5feff;
+  overflow: hidden;
+  max-height: 0;
+}
+.chy-box .chy-item .chy-content p {
+  margin-left: 10px;
+}
+.chy-box .chy-item .chy-content .btncontainer {
+  display: flex;
+  justify-content: flex-end;
+  background: white;
+}
+.chy-box .chy-item .chy-content .btncontainer .btn {
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  -webkit-border-radius: 5px;
+  margin: 10px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: black;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.5s linear all;
+}
+.chy-box .chy-item .chy-content .btncontainer .btn:hover {
+  color: white;
+  background-color: black;
+}
+.chy-box .chy-item:hover {
+  border-radius: 5px;
+  background: white;
+  opacity: 1;
+}
+.chy-box .chy-item:hover .chy-content {
+  max-height: 300px;
+}

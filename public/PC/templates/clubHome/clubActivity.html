@@ -1,0 +1,24 @@
+<meta charset='UTF-8'>
+<link href='./css/clubHome/clubActivity.css' rel='stylesheet'>
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-md-12 col-xs-12 dyj-activity">
+            <span class="dyj-activity-head">Activity List</span>
+            <div class="dyj-activity-pattern">
+                <a ng-repeat="data in datas" class="dyj-activty-position">
+                    <div class="col-xs-6 col-md-6 dyj-activity-total">
+                        <div ng-click="activityDetail(data)" class="dyj-activity-title">
+                            <div class="fa fa-pagelines dyj-title-position">{{data.title}}</div>
+                        </div>
+                        <div ng-click="activityDetail(data)" class="dyj-activity-content">
+                            <p class="dyj-content-position">活动时间:{{data.time | myDateTime}}</p>
+                            <p class="dyj-content-position">活动地点:{{data.place}}</p>
+                            <p class="dyj-content-position">活动详情:{{data.content}}</p>
+                            <div class="fa fa-anchor"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,285 @@
+.cd-back {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  color: #7f8c97;
+  background-color: #e9f0f5;
+}
+.cd-back div,
+.cd-back div:after,
+.cd-back div:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cd-back .cd-back * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.text {
+  font-size: 20px;
+  text-shadow: 0 0 0 6px #fff;
+  transform: scale(0, 1);
+}
+img {
+  max-width: 100%;
+}
+.wj-container {
+  background: url("../../image/download.jpg");
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  height: 800px;
+  border: 2px solid #ffffff;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.wj-container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* --------------------------------
+
+Main components
+
+-------------------------------- */
+#wj-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#wj-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 800px;
+  width: 4px;
+  background: #d7e4ed;
+}
+@media only screen and (min-width: 1170px) {
+  #wj-timeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  #wj-timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+.wj-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+.wj-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wj-timeline-block:first-child {
+  margin-top: 0;
+}
+.wj-timeline-block:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 1170px) {
+  .wj-timeline-block {
+    margin: 4em 0;
+  }
+  .wj-timeline-block:first-child {
+    margin-top: 0;
+  }
+  .wj-timeline-block:last-child {
+    margin-bottom: 0;
+  }
+}
+.wj-timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.wj-timeline-img img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+.wj-timeline-img.wj-picture {
+  background: #c2c1ce;
+}
+.wj-timeline-img.wj-movie {
+  background: #c03b44;
+}
+.wj-timeline-img.wj-location {
+  background: #f0ca45;
+}
+@media only screen and (min-width: 1170px) {
+  .wj-timeline-img {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  .cssanimations .wj-timeline-img.is-hidden {
+    visibility: hidden;
+  }
+  .cssanimations .wj-timeline-img.bounce-in {
+    visibility: visible;
+    -webkit-animation: wj-bounce-1 0.6s;
+    -moz-animation: wj-bounce-1 0.6s;
+    animation: wj-bounce-1 0.6s;
+  }
+}
+.wj-timeline-content {
+  position: relative;
+  margin-left: 60px;
+  background: white;
+  border-radius: 0.25em;
+  padding: 1em;
+  box-shadow: 0 3px 0 #d7e4ed;
+  opacity: 0.7;
+}
+.wj-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wj-timeline-content h2 {
+  color: #c9c9da;
+}
+.wj-timeline-content p,
+.wj-timeline-content .wj-load,
+.wj-timeline-content .wj-date {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+.wj-timeline-content .wj-load,
+.wj-timeline-content .wj-date {
+  display: inline-block;
+}
+.wj-timeline-content p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+.wj-timeline-content .wj-load {
+  float: right;
+  padding: .8em 1em;
+  background: #acb7c0;
+  color: white;
+  border-radius: 0.25em;
+}
+.no-touch .wj-timeline-content .wj-load:hover {
+  background-color: #9c9788;
+}
+a.wj-load:hover {
+  text-decoration: none;
+  background-color: #424242;
+}
+.wj-timeline-content .wj-date {
+  float: left;
+  padding: .8em 0;
+  opacity: .7;
+}
+.wj-timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white;
+}
+@media only screen and (min-width: 768px) {
+  .wj-timeline-content h2 {
+    font-size: 20px;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 0 0 6px #888;
+  }
+  .wj-timeline-content p {
+    font-size: 2rem;
+    color: black;
+    text-shadow: 0 0 6px #888;
+  }
+  .wj-timeline-content .wj-load,
+  .wj-timeline-content .wj-date {
+    font-size: 1.5rem;
+    text-shadow: 0 0 6px #888;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .wj-timeline-content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%;
+  }
+  .wj-timeline-content::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: white;
+  }
+  .wj-timeline-content .wj-load {
+    float: left;
+  }
+  .wj-timeline-content .wj-date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: 0 0 6px #fff;
+  }
+  .wj-timeline-block:nth-child(even) .wj-timeline-content {
+    float: right;
+  }
+  .wj-timeline-block:nth-child(even) .wj-timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: white;
+  }
+  .wj-timeline-block:nth-child(even) .wj-timeline-content .wj-load {
+    float: right;
+  }
+  .wj-timeline-block:nth-child(even) .wj-timeline-content .wj-date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+  .cssanimations .wj-timeline-content.is-hidden {
+    visibility: hidden;
+  }
+  .cssanimations .wj-timeline-content.bounce-in {
+    visibility: visible;
+    -webkit-animation: wj-bounce-2 0.6s;
+    -moz-animation: wj-bounce-2 0.6s;
+    animation: wj-bounce-2 0.6s;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  /* inverse bounce effect on even content blocks */
+  .cssanimations .wj-timeline-block:nth-child(even) .wj-timeline-content.bounce-in {
+    -webkit-animation: wj-bounce-2-inverse 0.6s;
+    -moz-animation: wj-bounce-2-inverse 0.6s;
+    animation: wj-bounce-2-inverse 0.6s;
+  }
+}

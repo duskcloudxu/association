@@ -1,0 +1,68 @@
+<div class="view-editInformation">
+    <div class="xt-flex-center">
+        <div class="container center-block">
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    **以下内容可只修改一部分**
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    <img ng-src="{{user.headimage}}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    <div class="Button Button-changeImage" ng-click="changeImage()">修改头像</div>
+                    <input type="file" id="headimg" ng-show="false" ngf-select ng-model="img"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    姓名:&nbsp;&nbsp;<input type="text" ng-model="user.name" disabled="disabled">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    昵称:&nbsp;&nbsp;<input type="text" ng-model="user.nickname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    学号:&nbsp;&nbsp;<input type="text" ng-model="user.studentID" disabled="disabled">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    性别:&nbsp;&nbsp;<input type="text" ng-model="user.sex" disabled="disabled">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    邮箱:&nbsp;&nbsp;<input type="text" ng-model="user.email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    手机:&nbsp;&nbsp;<input type="text" ng-model="user.mobile">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    旧密码:&nbsp;&nbsp;<input type="text" ng-model="user.pwdOld">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center">
+                    新密码:&nbsp;&nbsp;<input type="text" ng-model="user.pwdNew">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-rightend">
+                    <div class="Button Button-submit" ng-click="submitInformation()">提交</div>
+                    <div class="Button Button-back" ng-click="back()">返回</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="./css/activitynews/activityInform.css">
+
+<div class="chy-box">
+    <p>活动名称:{{activity.title}}</p>
+    <div>
+        <p>{{activity.associationName}}</p>
+        <p>{{activity.time | myDateTime}}</p>
+        <p>{{activity.place}}</p>
+    </div>
+    <div class="activityInform-content" ng-bind-html="activity.content | to_trusted"></div>
+</div>
+<button type="button" class="btn btn-default chy-enter" ng-click="enter()">报名</button>
+<button type="button" class="btn btn-default" ng-click="back()">返回</button>

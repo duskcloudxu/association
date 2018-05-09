@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="row">
+        <div class="view-user-left col-xs-4">
+            <div class="row xt-flex-center">
+                <img ng-src="{{person.headimage}}"  alt="个人头像">
+            </div>
+            <div class="row">
+                <div class="col-xs-12 user-left-name xt-flex-center">
+
+                    <div contenteditable="false">{{person.name}}</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 xt-flex-center user-left-sex">
+                    <span class="fa fa-intersex"></span>
+                    <div>:</div>
+                    <div>{{person.sex}}</div>
+                </div>
+            </div>
+            <div class="xt-flex-center">
+            <div class="user-left-informationBox">
+                <div class="row">
+                    <div class="col-xs-12 xt-flex">
+                        <span>学号:{{person.studentID}}</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <span>昵称:{{person.nickname}}</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <span>邮箱:{{person.email}}</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 ">
+                        <span>手机:{{person.mobile}}</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="xt-flex-rightend">
+                        <div ng-click="editInformation()" class="user-left-editbutton xt-flex-rightend">edit</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="view-user-right col-xs-8">
+            <div class="row ">
+                <div class="col-xs-12 xt-flex">
+                    <div class="user-right-head">我的动态</div>
+                </div>
+            </div>
+            <div class="messagebox">
+                <div class="row message"  ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-repeat="i in res|orderBy:'time':true">
+                    <div class="row">
+                        <div class="  xt-flex message-headline">
+                            <div class="message-headline-title">{{i.title}}</div>
+                            <div class="xt-flex-grow"></div>
+                            <div class="message-headline-time">{{showDate(i.time)}}</div>
+                            <div class="message-headline-type">{{i.type}}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 xt-flex message-content">
+                            <div class="xt-text contentbox" ng-bind-html="i.content | to_trusted"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="message-viewAll" ng-show="hoverEdit" ng-click="view(i)">
+                            <span class="fa fa-book"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

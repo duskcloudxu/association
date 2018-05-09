@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="./css/clubHome/download.css">
+<div id="wj-timeline" class="wj-container wj-background">
+    <div class="wj-timeline-block" ng-repeat="data in datas">
+        <div class="fa fa-text wj-timeline-img wj-picture"></div>
+        <div class="wj-timeline-content" ng-click="newsInform()">
+            <h2>{{data.title}}</h2>
+            <p>{{data.content}}</p>
+            <a href="https://www.baidu.com" class="wj-load">下载{{data.html}}</a>
+            <span class="wj-date">{{data.time | myDateTime}}</span>
+        </div>
+    </div>
+</div>
+        <!--<link rel="stylesheet" href="./css/download.css"/>
+      <meta charset="utf-8">
+      <div id="wj-timeline" class="wj-container">
+          <div class="wj-timeline-block">
+              <div class="fa fa-text wj-timeline-img wj-picture">
+              </div>
+
+              <div class="wj-timeline-content">
+                  <h2>名称</h2>
+                  <p>介绍</p>
+                  <a href="baidu.com" class="wj-load" target="_blank">下载</a>
+                  <span class="wj-date">2015-01-06</span>
+              </div>
+          </div>
+          <div class="wj-timeline-block">
+              <div class="wj-timeline-img wj-movie">
+              </div>
+
+              <div class="wj-timeline-content">
+                  <h2>and</h2>
+                  <p></p>
+                  <a href="" class="wj-load" target="_blank">下载</a>
+                  <span class="wj-date">2014-12-25</span>
+              </div>
+          </div>
+          <div class="wj-timeline-block">
+              <div class="wj-timeline-img wj-picture">
+              </div>
+
+              <div class="wj-timeline-content">
+                  <h2></h2>
+                  <p></p>
+                  <a href="" class="wj-load" target="_blank">下载</a>
+                  <span class="wj-date">2014-12-20</span>
+              </div>
+          </div>
+          <div class="wj-timeline-block">
+              <div class="wj-timeline-img wj-movie">
+              </div>
+
+              <div class="wj-timeline-content">
+                  <h2></h2>
+                  <p></p>
+                  <a href="" class="wj-load" target="_blank">下载</a>
+                  <span class="wj-date">2014-12-14</span>
+              </div>
+          </div>
+          <div class="wj-timeline-block">
+              <div class="wj-timeline-img wj-movie">
+              </div>
+
+              <div class="wj-timeline-content">
+                  <h2></h2>
+                  <p></p>
+                  <a href="" class="wj-load" target="_blank">下载</a>
+                  <span class="wj-date">2014-12-05</span>
+              </div>
+          </div>
+      </div>-->

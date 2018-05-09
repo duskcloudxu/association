@@ -1,0 +1,280 @@
+.chy-main {
+    background-image: url("../image/index.jpg") !important;
+    background-size: 100% 120%;
+    background-attachment: fixed;
+
+    .chy-main-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 40%;
+        h1 {
+            color: #FFFFFF !important;
+            font-family: 华文行楷;
+        }
+    }
+
+    .chy-main-img {
+        width: 100%;
+        text-align: center;
+        padding-top: 5%;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    }
+
+    .chy-main-btns {
+        width: 300px;
+        margin: auto;
+        padding-top: 10%;
+        button {
+            width: 150px;
+            margin-left: 25%;
+            margin-bottom: 5%;
+        }
+    }
+}
+
+//home页面的社团活动、介绍、动态三个子页面的样式
+.chy-activity {
+    a {
+        height: 100px;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 楷体;
+    }
+
+    .chy-activity-tips {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        margin-left: 45%;
+        margin-top: 3%;
+        & > div:nth-of-type(2) {
+            float: right;
+            margin-right: 10%;
+            margin-top: 5px;
+        }
+    }
+}
+
+.chy-introduction {
+    h2 {
+        font-family: 楷体;
+        color: #131dfa;
+        font-size: 24px !important;
+    }
+
+    p {
+        margin-top: 8%;
+        margin-left: 8%;
+        font-size: 16px;
+    }
+}
+
+.chy-dynamics {
+    a {
+        font-size: 21px;
+        padding-top: 5%;
+        color: #131dfa;
+        h1 {
+            font-family: 楷体;
+            font-size: 22px !important;
+        }
+    }
+}
+
+//社团活动、动态详情的页面样式
+.chy-activityInform {
+    font-family: 楷体;
+    h3 {
+        margin-left: 5%;
+        padding-top: 5%;
+        color: rgba(31, 44, 250, 0.76);
+    }
+
+    .activityInform-tips {
+        display: flex;
+        p {
+            margin-left: 6%;
+            font-size: 16px;
+            color: rgba(43, 165, 250, 0.76);
+        }
+    }
+
+    .activityInform-content {
+        font-size: 20px;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+
+    .activityInform-welcome {
+        float: right;
+        margin-right: 5%;
+        margin-top: 15%;
+        font-size: 16px;
+    }
+}
+
+.chy-newsInform {
+    width: 90%;
+    margin: auto;
+
+    h3 {
+        font-family: 楷体;
+        padding-top: 5%;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(93, 200, 250, 0.86);
+    }
+
+    .activityInform-tips {
+        display: flex;
+        p {
+            margin-left: 10%;
+            font-size: 16px;
+        }
+    }
+
+    .newsInform-content {
+        font-size: 18px;
+        margin-left: 5%;
+    }
+}
+
+//社团活动、动态编辑的页面样式
+.chy-activityEdit {
+    .chy-activityEdit-time {
+        display: flex;
+    }
+    .chy-activityEdit-content {
+        textarea {
+            width: 80%;
+            height: 200px;
+        }
+    }
+}
+
+.chy-newsEdit {
+    .chy-newsEdit-time {
+        display: flex;
+    }
+
+    .chy-newsEdit-content {
+        textarea {
+            width: 80%;
+            height: 200px;
+        }
+    }
+    .chy-newsEdit-fileInput {
+        margin-left: 5%;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        width: 120px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 16px;
+        background-color: #131dfa;
+        border: 1px solid rgba(43, 165, 250, 0.45);
+    }
+
+    .chy-newsEdit-fileInput input {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        -ms-filter: 'alpha(opacity=0)';
+    }
+
+    .chy-newsEdit-pic {
+        margin-left: 15px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid lightskyblue;
+    }
+}
+
+//关于、登录、注册页面的样式
+.chy-about {
+    .header {
+        .col {
+            background-color: lightgrey;
+        }
+    }
+
+    .col {
+        border: solid 1px grey;
+        border-bottom-style: none;
+        border-right-style: none;
+    }
+
+    .col:last-child {
+        border-right: solid 1px grey;
+    }
+
+    .row:last-child {
+        .col {
+            border-bottom: solid 1px grey;
+        }
+    }
+}
+
+.chy-checkbox {
+    display: flex;
+
+    span {
+        font-size: 16px;
+        margin-left: 3%;
+    }
+}
+
+.chy-register {
+    .input-label {
+        font-size: 18px;
+        color: rgba(19, 29, 250, 0.86);
+    }
+}
+
+.chy-clubDownload {
+    .item {
+        height: 150px;
+        p {
+            width: 70%;
+        }
+        button {
+            margin-left: 78%;
+            margin-top: 6%;
+        }
+    }
+}
+
+.chy-clubHome {
+    .chy-clubHome-top {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+            margin: 0;
+            margin-top: -10px;
+            font-size: 24px !important;
+            line-height: 34px !important;
+            color: rgba(19, 29, 250, 0.45);
+        }
+        div {
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid #00a0e9;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 30px;
+            color: #131dfa;
+        }
+    }
+    .chy-clubHome-time {
+        padding-top: 10px;
+    }
+}
+
+.chy-user {
+
+}

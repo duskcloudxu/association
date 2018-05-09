@@ -1,0 +1,446 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../../image/testclubpage.png") !important;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+//________________________________________背景______________
+.row {
+    margin: 0;
+}
+
+//________________________________________禁止bootstrap row的负margin______________
+
+@-webkit-keyframes hide {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes flyin {
+    0% {
+        opacity: 0;
+        right: -10px;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+//——————————————————————————————————————————————————————动画效果——————————————————————————————————————————————
+.xt-flex {
+    display: flex;
+}
+
+.xt-flex-grow {
+    flex-grow: 1;
+}
+
+.xt-flex-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.xt-flex-rightend {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.xt-flex-selfAlignend {
+    display: flex;
+    align-self: flex-end;
+}
+
+//________________________________________flex设置______________
+.xt-text {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+//________________________________________文本设置_______________
+.xt-bgdcolor-yellow {
+    background-color: #F4D03F;
+    opacity: 1;
+}
+
+.xt-bgdcolor-yellow:hover {
+    background-color: darken(#F4D03F, 20%);
+}
+
+.xt-bgdcolor-yellow:focus {
+    background-color: #F4D03F !important;
+}
+
+.xt-bgdcolor-blue {
+    background-color: #44B6AE;
+    opacity: 1;
+}
+
+.xt-bgdcolor-blue:hover {
+    background-color: darken(#44B6AE, 10%);
+}
+
+.xt-bgdcolor-blue:focus {
+    background-color: #44B6AE !important;
+
+}
+
+.xt-bgdcolor-black {
+    background-color: #ACB5C3;
+    opacity: 1;
+}
+
+.xt-bgdcolor-black:hover {
+    background-color: darken(#ACB5C3, 10%);
+}
+
+.xt-bgdcolor-black:focus {
+    background-color: #ACB5C3 !important;
+}
+
+//__________________________________________状态栏设置_____________________________
+.xt-navbar-yellow {
+    background-color: #F4D03F !important;
+    transition: all 0.5s cubic-bezier(0, 0, 0.450, 0.940);
+}
+
+.xt-navbar-blue {
+    background-color: #44B6AE !important;
+    transition: all 0.5s cubic-bezier(0, 0, 0.450, 0.940);
+}
+
+.xt-navbar-black {
+    background-color: #ACB5C3 !important;
+    transition: all 0.5s cubic-bezier(0, 0, 0.450, 0.940);
+}
+
+//__________________________________________背景颜色设置_____________________________
+.messagebox {
+    padding: 10px;
+    height: 670px;
+    overflow-y: scroll;
+    transition: all 0.5s linear;
+    .message {
+        color: white;
+        border: dashed thin gainsboro;
+        margin-top: 5px;
+        padding: 10px;
+        position: relative;
+        -webkit-animation: 0.5s show;
+        transition: all 0.2s linear;
+        .message-headline {
+            .message-headline-title {
+
+                background: linear-gradient(rgba(102, 89, 125, 0.37) 0%, darken(rgba(102, 89, 125, 0.37), 50%) 100%);
+                padding: 10px;
+                padding-bottom: 3px;
+                text-align: center;
+                min-width: 150px;
+
+            }
+            .message-headline-type {
+
+                background-color: rgba(102, 89, 125, 0.37);
+                padding: 3px;
+                margin-top: 9px;
+
+            }
+            .message-headline-time {
+                color: white;
+                padding: 3px;
+                margin-top: 9px;
+            }
+            .message-headline-position {
+                color: white;
+                padding: 3px;
+                margin-top: 9px;
+            }
+        }
+        .message-content {
+            width: 100%;
+            height: 100px;
+            margin-right: 30px;
+            padding-right: 30px;
+            background: linear-gradient(rgba(102, 89, 125, 0.37) 0%, darken(rgba(102, 89, 125, 0.37), 50%) 100%);
+            padding: 5px 10px;
+            .contentbox {
+                height: 60px;
+                overflow: hidden;
+            }
+        }
+
+        .message-viewAll {
+            -webkit-transition: all linear 0.3s;
+            transition: all linear 0.3s;
+            -webkit-animation: 0.5s flyin;
+            opacity: 1;
+            position: absolute;
+            cursor: pointer;
+            right: 10px;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            bottom: 10px;
+            color: white;
+            .fa-book:before {
+                margin-left: 6px;
+                vertical-align: middle;
+            }
+            .fa-book:before:hover {
+                box-shadow: 0px 0px 5px 5px #161613;
+            }
+        }
+        .message-viewAll:hover {
+
+        }
+        .message-viewAll.ng-hide {
+            opacity: 0;
+        }
+        .message-delete {
+            -webkit-transition: all linear 0.3s;
+            transition: all linear 0.3s;
+            opacity: 1;
+            position: absolute;
+
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            border: solid 2px white;
+            bottom: 10px;
+            color: white;
+            .fa-trash:before {
+                margin-left: 8px;
+                vertical-align: middle;
+            }
+        }
+        .message-delete.ng-hide {
+            opacity: 0;
+        }
+        .message-download {
+            -webkit-transition: all linear 0.3s;
+            transition: all linear 0.3s;
+            -webkit-animation: 0.5s flyin;
+            opacity: 1;
+            position: absolute;
+            cursor: pointer;
+            right: 10px;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            bottom: 10px;
+            color: white;
+            .fa-download:before {
+                margin-left: 8px;
+                vertical-align: middle;
+            }
+        }
+        .message-download.ng-hide {
+            opacity: 0;
+        }
+    }
+    .message:hover {
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.72);
+    }
+}
+
+.messagebox .message:nth-child(2n) {
+    .message-headline {
+        .message-headline-title {
+
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgba(53, 152, 220, 0.8);
+        }
+        .message-headline-type {
+            background-color: #4B77BE;
+        }
+
+    }
+    .message-content {
+        background-color: rgba(255, 255, 255, 0.78);
+    }
+    .message-viewAll {
+        color: black;
+
+    }
+    .message-delete {
+        color: black;
+    }
+    .message-download {
+        color: black;
+    }
+
+}
+
+.messagebox .message:nth-child(3n) {
+    .message-headline {
+        .message-headline-title {
+            background-color: fade(#BFCAD1, 60%);
+
+            padding-top: 5px;
+        }
+        .message-headline-type {
+            background-color: fade(#555555, 80%);
+            color: #f5f5f5;
+        }
+    }
+    .message-content {
+        background-color: rgba(0, 0, 0, 0.65);
+        color: #f5f5f5;
+    }
+    .message-viewAll {
+        color: white;
+
+    }
+
+}
+
+.messagebox::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.messagebox::-webkit-scrollbar {
+    width: 0px;
+    background-color: #F5F5F5;
+}
+
+.messagebox::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #D62929;
+}
+
+//——————————————————————————————————————————信息盒设置—————————————————————————————————————
+.xt-clubhome {
+    min-height: 700px;
+    width: 1024px !important;
+
+    .xt-clubhome-clubTitle {
+        .clubhome-clubTitle-name {
+            color: white;
+            font-size: 30px;
+            display: block;
+            margin: 10px;
+        }
+        .clubhome-clubTitle-intro {
+            color: white;
+            font-size: 20px;
+            margin: 10px;
+        }
+    }
+    img {
+        width: 100%;
+        transition: 1s all;
+        margin-bottom: 1px;
+    }
+    img:hover {
+        box-shadow: 0px 0px 5px 5px #161613;
+    }
+    .xt-clubhome-clubNav {
+        width: 100%;
+        height: 45px;
+        background: -webkit-linear-gradient(#383838, #272727);
+        border-bottom: 1px solid #222;
+        transition: all 1s;
+        z-index: 9999;
+
+        .clubhome-clubNav-btn {
+            width: 75px;
+            color: white;
+            transition: all 1s;
+        }
+        .clubhome-clubNav-btn:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        .clubhome-clubNav-back{
+            color: white;
+            margin: 10px;
+            &:hover{
+                cursor: pointer;
+                transform: rotate(360deg);
+                transition: 0.5s linear;
+            }
+        }
+    }
+    .xt-clubhome-clubNav:hover {
+        box-shadow: 0px 0px 5px 5px #161613;
+    }
+    .xt-clubhome-homepage {
+        position: relative;
+        -webkit-animation: 1s slideIn;
+        width: 1024px;
+        padding: 20px;
+        .messagebox {
+            border-right: dashed white 1px;
+            padding-right: 30px;
+        }
+        .img_container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+        .applicationBtn {
+            transition: all 0.5s linear;
+            margin-top: 10px;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            color: white;
+            border: dashed 1px white;
+        }
+        .applicationBtn:hover {
+            border: solid 1px white;
+            color: black;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+    }
+    .xt-clubhome-datapage {
+        position: relative;
+        -webkit-animation: 1s slideIn;
+        width: 1024px;
+        padding: 20px;
+    }
+}

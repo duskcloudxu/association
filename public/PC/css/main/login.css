@@ -1,0 +1,82 @@
+.fkq-center {
+  margin-left: auto;
+  margin-right: auto;
+  height: 350px;
+  width: 600px;
+  padding: 5%;
+}
+.fkq-center h1 {
+  font-size: 80px;
+}
+.fkq-center input,
+.fkq-center button {
+  margin-top: 3%;
+}
+.fkq-center .fkq-sign {
+  width: 440px;
+}
+.fkq-center .fkq-sign .fkq-checkbox {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.fkq-center .fkq-sign .btn-success:hover {
+  color: #fff;
+  background-color: #33599d;
+  border-color: #273784;
+}
+.fkq-center .fkq-sign .wj-form {
+  background: 0 0;
+  border: 0;
+  border-bottom: 1px solid #c2cad8;
+  color: #555;
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px;
+  outline: 0 !important;
+  line-height: 1.42857;
+  display: block;
+  border-radius: 0 !important;
+}
+.fkq-center .fkq-sign .wj-submit {
+  width: 100%;
+  background: 0 0;
+  border: 0;
+  border-bottom: 1px solid #c2cad8;
+  color: #555;
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14px;
+  outline: 0 !important;
+  line-height: 1.42857;
+  display: block;
+  border-radius: 0 !important;
+}
+.fkq-center button,
+.fkq-center button:hover {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  text-decoration: none;
+}
+.fkq-center .fkq-login {
+  position: absolute;
+}
+.fkq-center .fkq-login .fkq-logout {
+  color: black;
+}
+.wj-center {
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+.wj-shadow {
+  text-shadow: 0px 0px 20px #f2f8ff;
+  color: #cce0f1;
+  font-size: 20px;
+}

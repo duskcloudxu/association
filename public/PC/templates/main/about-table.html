@@ -1,0 +1,16 @@
+<h2>成员名单</h2>
+
+<table class="table table-hover table-bordered">
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="person in people" ng-click="openGithub(person)">
+        <td>{{ person.name }}</td>
+        <td>{{ person.email }}</td>
+    </tr>
+    </tbody>
+</table>

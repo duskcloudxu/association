@@ -1,0 +1,21 @@
+/* 1 */
+{
+  "_id" : ObjectId("5935028adaa8a34b10e069b4"),
+  "title" : "aaa.txt",
+  "content" : "来了来了",
+  "url" : "upload/file/5926b1be5abc0621e218ccebaaa.txt",
+  "associationId" : ObjectId("5926b1be5abc0621e218cceb"),
+  "time" : ISODate("2017-06-05T07:04:42.591Z"),
+  "__v" : 0.0
+}
+
+/* 2 */
+{
+  "_id" : ObjectId("593503ffdaa8a34b10e069b5"),
+  "title" : "bbb.txt",
+  "content" : "暗示法萨芬收社费扫二维",
+  "url" : "upload/file/5926b1be5abc0621e218ccebbbb.txt",
+  "associationId" : ObjectId("5926b1be5abc0621e218cceb"),
+  "time" : ISODate("2017-06-05T07:10:55.765Z"),
+  "__v" : 0.0
+}

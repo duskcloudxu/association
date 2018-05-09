@@ -1,0 +1,585 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../../image/userCenter.jpg") !important;
+    height: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+//________________________________________背景______________
+.row {
+    margin: 0px;
+}
+
+//________________________________________禁止bootstrap row的负margin______________
+
+@-webkit-keyframes hide {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        transform: scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        transform: translateX(900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+//——————————————————————————————————————————————————————动画效果——————————————————————————————————————————————
+.xt-flex {
+    display: flex;
+}
+
+.xt-flex-grow {
+    flex-grow: 1;
+}
+
+.xt-flex-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.xt-flex-rightend {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.xt-flex-selfAlignend {
+    display: flex;
+    align-self: flex-end;
+}
+
+//________________________________________flex设置______________
+.xt-text {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+//________________________________________文本设置_______________
+.xt-bgdcolor-yellow {
+    background-color: #F4D03F;
+    opacity: 1;
+}
+
+.xt-bgdcolor-yellow:hover {
+    background-color: darken(#F4D03F, 20%);
+}
+
+.xt-bgdcolor-yellow:focus {
+    background-color: #F4D03F !important;
+}
+
+.xt-bgdcolor-blue {
+    background-color: #44B6AE;
+    opacity: 1;
+}
+
+.xt-bgdcolor-blue:hover {
+    background-color: darken(#44B6AE, 10%);
+}
+
+.xt-bgdcolor-blue:focus {
+    background-color: #44B6AE !important;
+
+}
+
+.xt-bgdcolor-black {
+    background-color: #ACB5C3;
+    opacity: 1;
+}
+
+.xt-bgdcolor-black:hover {
+    background-color: darken(#ACB5C3, 10%);
+}
+
+.xt-bgdcolor-black:focus {
+    background-color: #ACB5C3 !important;
+}
+
+//__________________________________________状态栏设置_____________________________
+.xt-navbar-yellow {
+    background-color: #F4D03F !important;
+    transition: all 0.5s cubic-bezier(0, 0, 0.450, 0.940);
+}
+
+.xt-navbar-blue {
+    background-color: #44B6AE !important;
+    transition: all 0.5s cubic-bezier(0, 0, 0.450, 0.940);
+}
+
+.xt-navbar-black {
+    background-color: #ACB5C3 !important;
+    transition: all 0.5s cubic-bezier(0, 0, 0.450, 0.940);
+}
+
+//__________________________________________背景颜色设置_____________________________
+.messagebox {
+    padding: 10px;
+    background-color: rgba(158, 158, 158, 0.64);
+    border-radius: 5px;
+    //height: 670px;
+    //overflow-y: scroll;
+    transition: all 0.5s linear;
+    .message {
+        border-radius: 5px;
+        border: dashed thin gainsboro;
+        margin-top: 5px;
+        padding: 10px;
+        position: relative;
+        -webkit-animation: 0.5s show;
+
+        .message-headline {
+            .message-headline-title {
+                border-radius: 5px 30px 0px 0px;
+                background-color: rgba(102, 89, 125, 0.37);
+                padding: 10px;
+                padding-bottom: 3px;
+                text-align: center;
+                min-width: 150px;
+
+            }
+            .message-headline-type {
+                border-radius: 5px 5px 0px 0px;
+                background-color: rgba(102, 89, 125, 0.37);
+                padding: 3px;
+                margin-top: 9px;
+
+            }
+            .message-headline-time {
+                border-radius: 5px 5px 0px 0px;
+                padding: 3px;
+                margin-top: 9px;
+            }
+        }
+        .message-content {
+            width: 100%;
+            height: 100px;
+            border-radius: 0px 0px 5px 5px;
+            background-color: rgba(102, 89, 125, 0.37);
+            padding: 3px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 30px;
+            .contentbox {
+                height: 60px;
+                overflow: hidden;
+            }
+        }
+
+        .message-viewAll {
+            -webkit-transition: all linear 0.3s;
+            transition: all linear 0.3s;
+            opacity: 1;
+            position: absolute;
+            cursor: pointer;
+            border-radius: 50%;
+            right: 10px;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            border: solid 2px white;
+            bottom: 10px;
+            color: white;
+            .fa-book:before {
+                margin-left: 6px;
+                vertical-align: middle;
+            }
+        }
+        .message-viewAll.ng-hide {
+            opacity: 0;
+            transform: rotate(-90deg);
+        }
+        .message-delete {
+            -webkit-transition: all linear 0.3s;
+            transition: all linear 0.3s;
+            opacity: 1;
+            position: absolute;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            border: solid 2px white;
+            bottom: 10px;
+            color: white;
+            .fa-trash:before {
+                margin-left: 8px;
+                vertical-align: middle;
+            }
+        }
+        .message-delete.ng-hide {
+            opacity: 0;
+            transform: rotate(-90deg);
+        }
+        .message-download {
+
+        }
+    }
+}
+
+.messagebox .message:nth-child(2n) {
+    .message-headline {
+        .message-headline-title {
+            border-top-left-radius: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgba(53, 152, 220, 0.8);
+        }
+        .message-headline-type {
+            background-color: #4B77BE;
+        }
+
+    }
+    .message-content {
+        background-color: rgba(255, 255, 255, 0.78);
+    }
+    .message-viewAll {
+        border: solid 2px black;
+        color: black;
+
+    }
+    .message-delete {
+
+    }
+    .message-download {
+
+    }
+
+}
+
+.messagebox .message:nth-child(3n) {
+    .message-headline {
+        .message-headline-title {
+            background-color: fade(#BFCAD1, 60%);
+            border-radius: 2px;
+            padding-top: 5px;
+        }
+        .message-headline-type {
+            background-color: fade(#555555, 80%);
+            color: #f5f5f5;
+        }
+    }
+    .message-content {
+        background-color: rgba(0, 0, 0, 0.65);
+        color: #f5f5f5;
+    }
+    .message-viewAll {
+        border: solid 2px white;
+        color: white;
+
+    }
+
+}
+
+.messagebox::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.messagebox::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.messagebox::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #D62929;
+}
+
+//——————————————————————————————————————————信息盒设置—————————————————————————————————————
+
+.association {
+    -webkit-animation: 0.5s show;
+    border-radius: 10px;
+    color: black;
+    -webkit-transition: max-height linear 1.5s;
+    -moz-transition: max-height linear 1.5s;
+    -o-transition: max-height linear 1.5s;
+    transition: max-height linear 1.5s;
+    font-family: "微软雅黑";
+    font-size: 30px;
+    border: dashed 3px black;
+    margin: 30px;
+    padding: 5px;
+    height: 140px;
+    &:hover {
+        .association-bottom {
+            max-height: 40px;
+        }
+    }
+    .association-bottom {
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.3s linear;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    a:hover {
+        color: black;
+        text-decoration: none;
+    }
+    .association-headline {
+        width: 100%;
+        img {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            border: solid 2px white;
+        }
+        .association-headline-title {
+            margin: 20px;
+            font-size: 20px;
+        }
+
+    }
+    .association-name {
+        max-height: 60px;
+        margin: 10px;
+    }
+    .association-button {
+        font-size: 20px;
+        transition: all 0.5s linear;
+        margin: 10px;
+    }
+    .association-button.ng-show {
+        opacity: 1;
+    }
+    .association-button.ng-hide {
+        opacity: 0;
+    }
+    .association-button:link {
+        color: black;
+        text-decoration: none;
+    }
+    .association-fill {
+        height: 60px;
+        width: 100%;
+        background-color: black;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+}
+
+//__________________________________________社团框设置_________________________________
+.xt-nav {
+    display: flex;
+    width: 50%;
+    a {
+        display: flex;
+        justify-content: center;
+        flex-grow: 0.9;
+        align-items: center;
+        height: 30px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-left: -1px;
+        color: #464141;
+        font-family: 微软雅黑;
+        padding: 5px;
+    }
+    a:hover {
+        opacity: 1;
+        transition: all 1s;
+        text-decoration: none;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    a:active {
+        text-decoration: none;
+    }
+
+}
+
+.xt-navbar {
+    background-color: #ACB5C3;
+    position: relative;
+    width: 100%;
+    height: 8px;
+    margin-top: -1px;
+    margin-left: -1px;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.xt-view {
+    font-family: 微软雅黑;
+    margin-left: -1px;
+    margin-right: -1px;
+    width: 100%;
+    background-color: rgba(158, 158, 158, 0.6);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 0px 0px 5px 5px;
+    .container {
+        width: 100%;
+        padding: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .view-user-left {
+        position: relative;
+        border: solid;
+        margin-top: 120px;
+        background-color: gainsboro;
+        border-radius: 20px;
+        -webkit-animation: 0.5s show;
+        img {
+            margin-top: -120px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: solid 2px white;
+        }
+        .user-left-name {
+            font-size: 20px;
+        }
+        .user-left-sex {
+            margin-top: 5px;
+            font-size: 17px;
+            span {
+                line-height: 150%;
+            }
+        }
+        .user-left-informationBox {
+            font-size: 15px;
+            padding-left: 30px;
+        }
+        .user-left-editbutton {
+            margin: 10px;
+            padding: 5px;
+            background-color: #e6e6e6;
+            border-left: solid 1px transparent;
+            border-left: solid 4px red;
+            transition: all 0.5s linear;
+            border-radius: 0px 5px 5px 0px;
+        }
+        .user-left-editbutton:hover {
+            cursor: pointer;
+            background-color: #bcc5d4
+        }
+
+    }
+
+    .view-user-right {
+        .user-right-head {
+            font-size: 30px;
+            width: 100%;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.view-assandact {
+    font-family: 微软雅黑;
+    margin-left: -1px;
+    margin-right: -1px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 0px 0px 5px 5px;
+    .view-assandact-left {
+        border-right: dashed 2px #45456b;
+
+    }
+    .view-assandact-right {
+
+    }
+}
+
+.view-management {
+
+}
+
+.activityInf {
+    .activityInf-top {
+        color: blue;
+    }
+
+}
+
+.view-editInformation {
+    min-height: 700px;
+    font-size: 20px;
+    line-height: 48px;
+    .container {
+        margin-top: 20px;
+        border: dashed 2px white;
+        border-radius: 50px;
+        img {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            border: solid 2px white;
+        }
+        input {
+            margin-top: 10px;
+            border: 1px solid #c2cad8;
+            height: 30px !important;
+            border-radius: 15px;
+            padding-left: 15px;
+            background-color: #ffffff;
+        }
+        input:disabled {
+            background-color: #92a7b9;
+        }
+        .Button {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 5px;
+            height: 30px;
+            background-color: #bcc5d4;;
+            border-left: solid 1px transparent;
+            transition: all 0.5s linear;
+            border-radius: 0px 5px 5px 0px;
+            padding-right: 15px;
+        }
+        .Button-submit {
+            border-left: solid 4px blue;
+        }
+        .Button-back {
+            border-left: solid 4px red;
+        }
+        .Button-changeImage {
+            border-left: solid 4px lightgreen;
+        }
+        .Button:hover {
+            cursor: pointer;
+            background-color: #bcc5d4;
+            border-radius: 0px 15px 15px 0px;
+        }
+    }
+}

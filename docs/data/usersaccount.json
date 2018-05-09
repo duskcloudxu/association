@@ -1,0 +1,542 @@
+/* 1 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218cce4"),
+  "studentID" : "2015210405075",
+  "pwd" : "6yq/rDlDaXg=",
+  "email" : "714061720@qq.com",
+  "name" : "傅凯琪",
+  "nickname" : null,
+  "sex" : "m",
+  "admins" : [
+    ObjectId("5926b1be5abc0621e218cceb"),
+    ObjectId("5926b1be5abc0621e218cced"),
+    ObjectId("5926b1be5abc0621e218ccee"),
+    ObjectId("5926b1be5abc0621e218ccef")
+  ],
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cceb"),
+    ObjectId("5926b1be5abc0621e218ccec"),
+    ObjectId("5926b1be5abc0621e218cced"),
+    ObjectId("5926b1be5abc0621e218ccee"),
+    ObjectId("5926b1be5abc0621e218ccef")
+  ],
+  "mobile" : null,
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405075.jpg",
+  "createtime" : ISODate("2017-05-25T12:00:00.169Z"),
+  "attendedActivity" : []
+}
+
+/* 2 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218cce5"),
+  "studentID" : "2015210405003",
+  "pwd" : "6yq/rDlDaXg=",
+  "email" : "624126503@qq.com",
+  "name" : "徐韬",
+  "nickname" : null,
+  "sex" : "m",
+  "admins" : [
+    ObjectId("5926b1be5abc0621e218ccec"),
+    ObjectId("5926b1be5abc0621e218cceb")
+  ],
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218ccec"),
+    ObjectId("5926b1be5abc0621e218cceb")
+  ],
+  "mobile" : null,
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405003.jpg",
+  "createtime" : ISODate("2017-05-25T12:00:00.169Z"),
+  "attendedActivity" : []
+}
+
+/* 3 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218cce6"),
+  "studentID" : "2015210405013",
+  "pwd" : "6yq/rDlDaXg=",
+  "email" : "837046740@qq.com",
+  "name" : "岑焕亚",
+  "nickname" : null,
+  "sex" : "f",
+  "admins" : [],
+  "associations" : [],
+  "mobile" : null,
+  "headimage" : "/web/file/showImg?location=userheadimg&name=user-default-head.jpg",
+  "createtime" : ISODate("2017-05-25T12:00:00.169Z"),
+  "attendedActivity" : []
+}
+
+/* 4 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218cce7"),
+  "studentID" : "2015210405076",
+  "pwd" : "6yq/rDlDaXg=",
+  "email" : "873215214@qq.com",
+  "name" : "韦洁",
+  "nickname" : null,
+  "sex" : "f",
+  "admins" : [],
+  "associations" : [],
+  "mobile" : null,
+  "headimage" : "/web/file/showImg?location=userheadimg&name=201521040507633D9392E4590031016C4EF7A3BCA2209.png",
+  "createtime" : ISODate("2017-05-25T12:00:00.169Z"),
+  "attendedActivity" : []
+}
+
+/* 5 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218cce8"),
+  "studentID" : "2015210405047",
+  "pwd" : "6yq/rDlDaXg=",
+  "email" : "970716011@qq.com",
+  "name" : "戴雅婕",
+  "nickname" : null,
+  "sex" : "f",
+  "admins" : [],
+  "associations" : [],
+  "mobile" : null,
+  "headimage" : "/web/file/showImg?location=userheadimg&name=user-default-head.jpg",
+  "createtime" : ISODate("2017-05-25T12:00:00.169Z"),
+  "attendedActivity" : []
+}
+
+/* 6 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218cce9"),
+  "studentID" : "1",
+  "pwd" : "6yq/rDlDaXg=",
+  "email" : null,
+  "name" : "路人甲",
+  "nickname" : null,
+  "sex" : "m",
+  "admins" : [],
+  "associations" : [],
+  "mobile" : null,
+  "headimage" : "/web/file/showImg?location=userheadimg&name=user-default-head.jpg",
+  "createtime" : ISODate("2017-05-25T12:00:00.169Z"),
+  "attendedActivity" : []
+}
+
+/* 7 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218ccea"),
+  "studentID" : "2",
+  "pwd" : "6yq/rDlDaXg=",
+  "email" : null,
+  "name" : "路人乙",
+  "nickname" : null,
+  "sex" : "m",
+  "admins" : [],
+  "associations" : [],
+  "mobile" : null,
+  "headimage" : "/web/file/showImg?location=userheadimg&name=user-default-head.jpg",
+  "createtime" : ISODate("2017-05-25T12:00:00.169Z"),
+  "attendedActivity" : []
+}
+
+/* 8 */
+{
+  "_id" : ObjectId("5937f7c6e98de4205c99111e"),
+  "studentID" : "2015210405041",
+  "email" : "2015210405@qq.com",
+  "nickname" : "荆轲",
+  "name" : "荆轲",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405041荆轲.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T12:55:34.998Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cced")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 9 */
+{
+  "_id" : ObjectId("5937fa825be0831bd4807a3a"),
+  "studentID" : "2015210405042",
+  "nickname" : "后羿",
+  "name" : "后羿",
+  "email" : "2015210405@qq.com",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405042后羿.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:07:14.480Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cceb"),
+    ObjectId("5926b1be5abc0621e218cceb"),
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 10 */
+{
+  "_id" : ObjectId("5937fba9ae425317008e5d53"),
+  "studentID" : "2015210405043",
+  "email" : "2015210405@qq.com",
+  "nickname" : "貂蝉",
+  "name" : "貂蝉",
+  "sex" : "female",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405043貂蝉.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:12:09.660Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cceb"),
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 11 */
+{
+  "_id" : ObjectId("5937fc58e104b51f143b0180"),
+  "studentID" : "2015210405044",
+  "email" : "2015210405@qq.com",
+  "nickname" : "东皇太一",
+  "name" : "东皇太一",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405044东皇太一jpg.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:15:04.491Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cceb"),
+    ObjectId("5926b1be5abc0621e218cceb")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 12 */
+{
+  "_id" : ObjectId("5937fcb4e104b51f143b0181"),
+  "studentID" : "2015210405045",
+  "email" : "2015210405@qq.com",
+  "nickname" : "曹操",
+  "name" : "曹操",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405045曹操.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:16:36.806Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cced"),
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 13 */
+{
+  "_id" : ObjectId("5937fcdae104b51f143b0182"),
+  "studentID" : "2015210405046",
+  "nickname" : "诸葛亮",
+  "name" : "诸葛亮",
+  "email" : "2015210405@qq.com",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405046诸葛亮.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:17:14.108Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cceb")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 14 */
+{
+  "_id" : ObjectId("5937fd31e104b51f143b0183"),
+  "studentID" : "2015210405048",
+  "email" : "2015210405@qq.com",
+  "nickname" : "大乔",
+  "name" : "大乔",
+  "sex" : "female",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405048大乔.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:18:41.023Z"),
+  "associations" : [],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 15 */
+{
+  "_id" : ObjectId("5937fd58e104b51f143b0184"),
+  "studentID" : "2015210405049",
+  "email" : "2015210405@qq.com",
+  "nickname" : "孙尚香",
+  "name" : "孙尚香",
+  "sex" : "female",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405049孙尚香.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:19:20.384Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cceb"),
+    ObjectId("5926b1be5abc0621e218cced"),
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 16 */
+{
+  "_id" : ObjectId("5937fd7ce104b51f143b0185"),
+  "studentID" : "2015210405050",
+  "email" : "2015210405@qq.com",
+  "nickname" : "小乔",
+  "name" : "小乔",
+  "sex" : "female",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405050小乔.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:19:56.045Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cced"),
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 17 */
+{
+  "_id" : ObjectId("5937fda2e104b51f143b0186"),
+  "studentID" : "2015210405052",
+  "nickname" : "墨子",
+  "name" : "墨子",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "email" : "2015210405@qq.com",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405052墨子.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:20:34.593Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cced")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 18 */
+{
+  "_id" : ObjectId("5937f5c93285cf3770ef71ed"),
+  "studentID" : "2015210405065",
+  "email" : "2015210405@qq.com",
+  "nickname" : "老夫子",
+  "name" : "老夫子",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405065老夫子.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T12:47:05.315Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 19 */
+{
+  "_id" : ObjectId("5937f81da15c2219f09f5dac"),
+  "studentID" : "2015210405062",
+  "email" : "2015210405@qq.com",
+  "nickname" : "姜子牙",
+  "name" : "姜子牙",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405062姜子牙.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T12:57:01.879Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 20 */
+{
+  "_id" : ObjectId("5937f96c20983a2908dcc961"),
+  "studentID" : "2015210405061",
+  "email" : "2015210405@qq.com",
+  "nickname" : "孙膑",
+  "name" : "孙膑",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405061孙膑.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:02:36.806Z"),
+  "associations" : [],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 21 */
+{
+  "_id" : ObjectId("5937fa01be67ac0674f2643e"),
+  "studentID" : "2015210405060",
+  "email" : "2015210405@qq.com",
+  "nickname" : "马可波罗",
+  "name" : "马可波罗",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405060马可波罗.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:05:05.217Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cced"),
+    ObjectId("5926b1be5abc0621e218ccee"),
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 22 */
+{
+  "_id" : ObjectId("5937faa6244047041038c839"),
+  "studentID" : "2015210405059",
+  "email" : "2015210405@qq.com",
+  "nickname" : "李元芳",
+  "name" : "李元芳",
+  "sex" : "female",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405059李元芳.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:07:50.105Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cced"),
+    ObjectId("5926b1be5abc0621e218ccee"),
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 23 */
+{
+  "_id" : ObjectId("5937fb0ea79abd01d8265737"),
+  "studentID" : "2015210405057",
+  "email" : "2015210405@qq.com",
+  "nickname" : "孙悟空",
+  "name" : "孙悟空",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405057孙悟空.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:09:34.152Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 24 */
+{
+  "_id" : ObjectId("5937fcc5a79abd01d8265738"),
+  "studentID" : "2015210405056",
+  "email" : "2015210405@qq.com",
+  "nickname" : "花木兰",
+  "name" : "花木兰",
+  "sex" : "female",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405056相遇.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:16:53.752Z"),
+  "associations" : [],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 25 */
+{
+  "_id" : ObjectId("5937fd4ea79abd01d8265739"),
+  "studentID" : "2015210405055",
+  "email" : "2015210405@qq.com",
+  "nickname" : "芈月",
+  "name" : "芈月",
+  "sex" : "female",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405055芈月.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:19:10.394Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218cced"),
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 26 */
+{
+  "_id" : ObjectId("5937fd80a79abd01d826573a"),
+  "studentID" : "2015210405054",
+  "email" : "2015210405@qq.com",
+  "nickname" : "虞姬",
+  "name" : "虞姬",
+  "sex" : "female",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405054虞姬.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:20:00.721Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}
+
+/* 27 */
+{
+  "_id" : ObjectId("5937fdafa79abd01d826573b"),
+  "studentID" : "2015210405053",
+  "email" : "2015210405@qq.com",
+  "nickname" : "钟馗",
+  "name" : "钟馗",
+  "sex" : "male",
+  "mobile" : "20152104050",
+  "headimage" : "/web/file/showImg?location=userheadimg&name=2015210405053钟馗.jpg",
+  "pwd" : "6yq/rDlDaXg=",
+  "attendedActivity" : [],
+  "createtime" : ISODate("2017-06-07T13:20:47.445Z"),
+  "associations" : [
+    ObjectId("5926b1be5abc0621e218ccee")
+  ],
+  "admins" : [],
+  "__v" : 0
+}

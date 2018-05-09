@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+    // 判断手机还是PC
+    let ua = navigator.userAgent;
+    let ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+        isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+        isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+        isMobile = isIphone || isAndroid;
+    if (isMobile) {
+        window.location = "webApp/index.html";
+    } else {
+        if (window.attachEvent) {
+            window.location = "downloadChrome.html"
+        }
+        window.location = "PC/index.html";
+    }
+</script>

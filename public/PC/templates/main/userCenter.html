@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="./css/main/userCenter.css">
+<div ng-app="ngAnimate">
+<div class="xt-nav">
+    <a ui-sref=".myprofile" class="xt-bgdcolor-black" ng-click="navStatus='xt-navbar-black';record()" id="first_button">个人主页</a>
+    <a ui-sref=".myAssAndAct" class="xt-bgdcolor-blue" ng-click="navStatus='xt-navbar-blue';record()" >社团动态</a>
+    <a ui-sref=".mymanagement" class="xt-bgdcolor-yellow"  ng-click="navStatus='xt-navbar-yellow';record()">社团管理</a>
+</div>
+<div class="xt-navbar" ng-class="navStatus"></div>
+<div class="xt-view" ui-view ></div>
+</div>

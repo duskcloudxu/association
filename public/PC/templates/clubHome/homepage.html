@@ -1,0 +1,35 @@
+<div class="xt-clubhome-homepage .container">
+    <div class="col-xs-9">
+        <div class="messagebox">
+            <div class="row message" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()"
+                 ng-repeat="i in data|orderBy:'time':true">
+                <div class="row">
+                    <div class="  xt-flex message-headline">
+                        <div class="message-headline-title">{{i.title}}</div>
+                        <div class="xt-flex-grow"></div>
+                        <div class="message-headline-time">{{showDate(i.time)}}</div>
+                        <div class="message-headline-time" ng-if="i.type==='活动'">{{i.place}}</div>
+                        <div class="message-headline-type">{{i.type}}</div>
+                    </div>
+
+                    <div class="col-xs-12 xt-flex message-content">
+                        <div class="xt-text contentbox" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()"
+                             ng-bind-html="i.content | to_trusted"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="message-viewAll" ng-show="hoverEdit" ng-click="view(i)">
+                        <span class="fa fa-book"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-3">
+        <div class="img_container">
+            <img ng-src="{{club.logoimage}}" alt="">
+        </div>
+        <div class="applicationBtn xt-flex-center" ng-click="application()">申请入社</div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<ion-view view-title="Activity">
+    <ion-content class="chy-activity">
+        <ion-refresher  pulling-text="下拉刷新..."  on-refresh="doRefresh()">
+        </ion-refresher>
+
+        <div class="list card activityList-content">
+
+            <a ng-repeat="data in datas" ng-class="data.itemColor" ng-style="data.itemStyle" ng-click="activityInform(data)">
+                {{data.title}}
+                <div class="chy-activity-tips">
+                    <div>{{data.time | myDateTime}}</div>
+                    <div>{{data.associationName}}</div>
+                </div>
+            </a>
+
+        </div>
+    </ion-content>
+</ion-view>

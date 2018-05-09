@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="./css/activitynews/newsInform.css">
+<div class="chy-box">
+    <p>{{news.title}}</p>
+    <div class="newsInform-tips">
+        <p>{{news.time | myDateTime}}</p>
+        <p>{{news.association.name}}</p>
+    </div>
+    <div class="newsInform-content"  ng-bind-html="news.content | to_trusted"></div>
+</div>
+<button type="button" class="btn btn-default" ng-click="back()">返回</button>

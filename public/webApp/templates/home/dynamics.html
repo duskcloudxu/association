@@ -1,0 +1,17 @@
+<ion-view view-title="Dynamics">
+    <ion-content class="chy-dynamics">
+        <ion-refresher  pulling-text="下拉刷新..."  on-refresh="doRefresh()">
+        </ion-refresher>
+        <div class="content ionic-pseudo">
+
+            <div class="list item-text-wrap">
+
+                <a ng-repeat="data in datas" class="item item-thumbnail-right" ng-click="newsInform(data)">
+                    <img ng-src={{data.imgSrc}}>
+                    <h1>{{data.title}}</h1>
+                </a>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,49 @@
+.wj-container {
+  position: relative;
+  margin-top: 40%;
+  margin-bottom: 40%;
+}
+.wj-appinfo {
+  padding: 40px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.5);
+  width: 60%;
+  height: 50%;
+  margin-left: 20%;
+}
+.wj-infomation {
+  margin: 40px;
+}
+.wj-text {
+  font-size: 60px;
+  font-family: "微软雅黑";
+  text-shadow: 0 0 6px #f2f8ff;
+  color: aliceblue;
+}
+p {
+  text-shadow: 0 0 6px #f2f8ff;
+  color: aliceblue;
+}
+h1 {
+  font-size: 50px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0px 0px 6px #f2f8ff;
+  color: aliceblue;
+  margin-bottom: 10%;
+}
+.btn.btn-lg.btn-primary.submit:hover {
+  background-color: #1511c0;
+  border-color: #8f9396;
+}
+.submit {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  padding: 7px 30px;
+  background-color: #000;
+  border-color: #FFF;
+  border-radius: 0;
+  margin-top: 30%;
+  margin-left: 85%;
+}

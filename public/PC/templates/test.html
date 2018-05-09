@@ -1,0 +1,53 @@
+<div>
+    hello {{test}}!
+    <ul>
+        <li ng-repeat="i in list">{{i}}</li>
+    </ul>
+
+    <form name="myForm">
+        <!--
+        富文本编辑器
+        使用方法：
+        class="ueditor"就好了
+        ng-model绑定变量后会把html整个记录下了，要用了渲染下就好了
+        -->
+        <textarea class="ueditor" ng-model="text.content" style="height: 270px;"></textarea>
+    </form>
+    <p id="raw">
+        {{text.content}}
+    </p>
+    <button ng-click="renderhtml()">手动渲染(不赞成的操作)</button>
+    <p id="render"></p>
+    自动渲染:<div style="color:black;padding-bottom: 30px;margin-left: 10px;margin-top: 10px;" ng-bind-html="text.content | to_trusted"></div>
+
+    isadmin<input type="checkbox" ng-model="isadmin">
+    <div ng-if="isadmin">
+        admin
+    </div>
+    <button ng-click="gohome()">gohome</button>
+    <button ng-click="httptest()">httptest</button>
+    <div ng-if="httpget">{{show}}</div>
+
+    <br/><br/><br/>
+    <div>
+        <h3>以下是增加活动的测试</h3>
+        title<input type="text" ng-model="association.title">
+        content:<input type="text" ng-model="association.proprieter">
+        time:<input type="text" ng-model="association.logoimage">
+        <input type="button" value="修改活动" ng-click="addAssociation()">
+        <h3>以下是增加社团的测试</h3>
+        title:<input type="text" ng-model="association.name">
+        content:<input type="text" ng-model="association.proprieter">
+        association:<input type="text" ng-model="association.logoimage">
+        <input type="button" value="添加" ng-click="addAssociation()">
+        <h3>以下是参加活动的测试</h3>
+        id<input type="text" ng-model="studentId">
+        id<input type="text" ng-model="activityId">
+
+        <input type="button" value="查询活动" ng-click="attendActivity()">
+    </div>
+
+    <br/><br/><br/>
+    <input type="button" value="发送邮件测试" ng-click="sendmail()">
+    <br/><br/><br/>
+</div>

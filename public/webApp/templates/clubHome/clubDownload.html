@@ -1,0 +1,13 @@
+<ion-view view-title="资料下载">
+    <ion-content class="chy-clubDownload">
+        <div class="list item-text-wrap">
+            <div ng-if="!datas.length">啥都没有哦</div>
+            <div ng-if="datas.length" ng-repeat="data in datas" class="item ">
+                <p>{{data.title}}</p>
+                <p>{{data.content}}</p>
+                <button class="button button-outline button-positive" ng-click="download(data)">
+                    <i class="icon ion-ios-download"></i></button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

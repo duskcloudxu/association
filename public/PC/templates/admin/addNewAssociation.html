@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="./css/admin/newAssociation.css">
+<star-canvas></star-canvas>
+<div class="chy-box">
+    <div class="logo-image">
+        <img ng-src="{{newAssociation.logoimage}}"/>
+        <button class="btn btn-default" ng-click="changeImage()">选择logo图片</button>
+        <input type="file" id="headimg" ng-show="false" ngf-select ng-model="img"/>
+    </div>
+    <div class="association-message">
+        <div>
+            社团名:<input type="text" ng-model="newAssociation.name">
+        </div>
+        <div>
+            一句话描述:<input type="text" ng-model="newAssociation.introduction">
+        </div>
+        <button class="btn btn-default sbt" ng-click="submitInformation()">提交</button>
+    </div>
+</div>

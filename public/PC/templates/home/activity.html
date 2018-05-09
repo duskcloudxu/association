@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="./css/home/activity.css">
+<div class="chy-box">
+    <div class="container">
+        <div class="col-xs-6">
+            <div ng-repeat="data in data2" class="chy-item">
+                <h3>{{data.title}}</h3>
+                <div class="chy-content" >
+                    <div class="chy-activitylist-tips">
+                        <p>{{data.time | myDateTime}}</p>
+                        <p>{{data.place}}</p>
+                    </div>
+                    <p>{{data.associationName}}</p>
+                    <div class="btncontainer">
+                        <div class="btn" ng-click="activityInform(data)">查看详情</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div ng-repeat="data in data1" class="chy-item">
+                <h3>{{data.title}}</h3>
+                <div class="chy-content fade-element-in">
+                    <div class="chy-activitylist-tips">
+                        <p>{{data.time | myDateTime}}</p>
+                        <p>{{data.place}}</p>
+                    </div>
+                    <p>{{data.associationName}}</p>
+                    <div class="btncontainer">
+                        <div class="btn" ng-click="activityInform(data)">查看详情</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<style>
+    .uploadanddownloadtest {
+        color: white;
+    }
+
+    .cropArea {
+        background: #E4E4E4;
+        overflow: hidden;
+        width: 500px;
+        height: 350px;
+    }
+</style>
+
+<div class="uploadanddownloadtest">
+    文件上传(选择后自动上传)<input type="file" ngf-select ng-model="files" ngf-multiple="true"/>
+    文件下载：输入文件名<input type="text" ng-model="filename">
+    <button ng-click="download()">下载</button>
+
+    <br/><br/><br/>
+
+    插入服务器图片：
+    <img src="../web/file/showImg?name=梦幻.jpg">
+
+    <br/><br/><br/>
+
+    <div>Select an image file: <input type="file" id="fileInput"/></div>
+    <div class="cropArea">
+        <img-crop image="myImage" result-image="myCroppedImage"></img-crop>
+    </div>
+    <div>Cropped Image:{{myCroppedImage}}</div>
+    <div><img ng-src="{{myCroppedImage}}"/></div>
+
+    <br/><br/><br/>
+
+    上传图片到服务器并显示在img标签：<br/>
+    请选择图片<input type="file" ngf-select ng-model="img"/>
+    <!--<img src="../web/file/showImg?name=梦幻.jpg" width="250">-->
+    <img src="{{imgsrc}}" width="250">
+    <button ng-click="uploadImg()">确认上传</button>
+
+    <br/><br/><br/>
+</div>

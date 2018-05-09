@@ -1,0 +1,49 @@
+{
+  "imageurl":"../testdata/xt-testimg.jpg",
+  "nickname":"kinoshita hideyoshi",
+  "gender":"秀吉",
+  "mobile":"unknown",
+  "meassage":[
+    {"title":"YH催婚协会","type":"通知" ,"content":"hanser Yukiri快结婚啊！！！！！！"}
+    ,{"title":"极东魔术昼寝结社" ,"type":"通知" ,"content":"小鸟游家要小心一个叫X太的男人"}
+    ,{"title":"雏见泽学生会" ,"type":"通知" ,"content":"寒蝉鸣泣之时"}
+  ,{"title":"FFF团" ,"type":"通知" ,"content":"圣战日的到来"}
+  ,{"title":"新日暮里" ,"type":"通知" ,"content":"boy♂next♂door boy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂doorboy♂next♂door"}
+  ,{"title":"学院都市" ,"type":"通知" ,"content":"NO.1的萝莉控"}
+
+
+
+  ],
+  "association":[
+    {"title":"YH催婚协会"
+    ,"activity":[
+    ]
+    },
+    {"title":"极东魔术昼寝结社"
+    ,"activity":[
+    ]},
+    {"title":"雏见泽学生会"
+    ,"activity":[
+    ]}
+  ],
+  "activity":[
+    {
+      "title":"YH见面会",
+      "content":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "time":"2018年4月1日"
+    },
+    {
+      "title":"睡觉活动",
+      "content":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "time":"2018年4月2日"
+    },
+    {
+      "title":"柴刀end",
+      "content":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "time":"1983年4月1日"
+    }
+  ]
+
+
+
+}

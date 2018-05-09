@@ -1,0 +1,297 @@
+/* 1 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218cceb"),
+  "name" : "魔方社",
+  "proprieterId" : ObjectId("5926b1be5abc0621e218cce4"),
+  "admins" : [
+    ObjectId("5926b1be5abc0621e218cce4"),
+    ObjectId("5926b1be5abc0621e218cce5"),
+    ObjectId("5926b1be5abc0621e218cce6")
+  ],
+  "logoimage" : "/web/file/showImg?location=clubheadimg&name=2015210405075cube.jpg",
+  "introduction" : "大家一起玩魔方！",
+  "members" : [
+    ObjectId("5926b1be5abc0621e218cce4"),
+    ObjectId("5926b1be5abc0621e218cce5"),
+    ObjectId("5926b1be5abc0621e218cce6"),
+    ObjectId("5926b1be5abc0621e218ccea"),
+    ObjectId("5937fa825be0831bd4807a3a"),
+    ObjectId("5937fa825be0831bd4807a3a"),
+    ObjectId("5937fba9ae425317008e5d53"),
+    ObjectId("5937fc58e104b51f143b0180"),
+    ObjectId("5937fc58e104b51f143b0180"),
+    ObjectId("5937fcdae104b51f143b0182"),
+    ObjectId("5937fd58e104b51f143b0184")
+  ],
+  "notice" : [],
+  "application" : [
+    {
+      "memberId" : ObjectId("5937f384faf14d1fd4d05ce2"),
+      "statement" : "3",
+      "_id" : ObjectId("5937f693e98de4205c99111c")
+    },
+    {
+      "memberId" : ObjectId("5937fcb4e104b51f143b0181"),
+      "statement" : "5",
+      "_id" : ObjectId("59380a4e33bc5037e41136c3")
+    },
+    {
+      "memberId" : ObjectId("5937fd31e104b51f143b0183"),
+      "statement" : "7",
+      "_id" : ObjectId("59380b5b33bc5037e41136c7")
+    },
+    {
+      "memberId" : ObjectId("5937fcc5a79abd01d8265738"),
+      "statement" : "请输入申请理由14",
+      "_id" : ObjectId("59380e4f33bc5037e41136db")
+    },
+    {
+      "memberId" : ObjectId("5937fa01be67ac0674f2643e"),
+      "statement" : "请输入申请理由17",
+      "_id" : ObjectId("59380f2f33bc5037e41136e4")
+    },
+    {
+      "memberId" : ObjectId("5937f5c93285cf3770ef71ed"),
+      "statement" : "请输入申请理由20",
+      "_id" : ObjectId("5938106a33bc5037e41136f0")
+    }
+  ]
+}
+
+/* 2 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218ccec"),
+  "name" : "桌游社",
+  "proprieterId" : ObjectId("5926b1be5abc0621e218cce5"),
+  "admins" : [
+    ObjectId("5926b1be5abc0621e218cce5")
+  ],
+  "members" : [
+    ObjectId("5926b1be5abc0621e218cce5")
+  ],
+  "logoimage" : "/web/file/showImg?location=clubheadimg&name=2015210405075game.jpg",
+  "introduction" : "大家一起玩桌游！",
+  "notice" : [],
+  "application" : [
+    {
+      "memberId" : ObjectId("5937f7c6e98de4205c99111e"),
+      "statement" : "1",
+      "_id" : ObjectId("5937f8373250de2c242ed949")
+    },
+    {
+      "memberId" : ObjectId("5937fc58e104b51f143b0180"),
+      "statement" : "4",
+      "_id" : ObjectId("5938099833bc5037e41136bf")
+    },
+    {
+      "memberId" : ObjectId("5937fcdae104b51f143b0182"),
+      "statement" : "6",
+      "_id" : ObjectId("59380ab433bc5037e41136c6")
+    },
+    {
+      "memberId" : ObjectId("5937fd31e104b51f143b0183"),
+      "statement" : "7",
+      "_id" : ObjectId("59380b7a33bc5037e41136c9")
+    },
+    {
+      "memberId" : ObjectId("5937fdafa79abd01d826573b"),
+      "statement" : "请输入申请理由11",
+      "_id" : ObjectId("59380d5133bc5037e41136d2")
+    },
+    {
+      "memberId" : ObjectId("5937fd80a79abd01d826573a"),
+      "statement" : "请输入申请理由12",
+      "_id" : ObjectId("59380dc633bc5037e41136d5")
+    },
+    {
+      "memberId" : ObjectId("5937fcc5a79abd01d8265738"),
+      "statement" : "请输入申请理由14",
+      "_id" : ObjectId("59380e6933bc5037e41136dd")
+    },
+    {
+      "memberId" : ObjectId("5937fb0ea79abd01d8265737"),
+      "statement" : "请输入申请理由15",
+      "_id" : ObjectId("59380ed533bc5037e41136e0")
+    },
+    {
+      "memberId" : ObjectId("5937f81da15c2219f09f5dac"),
+      "statement" : "请输入申请理由19",
+      "_id" : ObjectId("5938100f33bc5037e41136ed")
+    }
+  ]
+}
+
+/* 3 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218cced"),
+  "name" : "PS社",
+  "proprieterId" : ObjectId("5926b1be5abc0621e218cce6"),
+  "admins" : [
+    ObjectId("5926b1be5abc0621e218cce6"),
+    ObjectId("5926b1be5abc0621e218cce4")
+  ],
+  "members" : [
+    ObjectId("5926b1be5abc0621e218cce6"),
+    ObjectId("5926b1be5abc0621e218cce4"),
+    ObjectId("5937f7c6e98de4205c99111e"),
+    ObjectId("5937fcb4e104b51f143b0181"),
+    ObjectId("5937fd58e104b51f143b0184"),
+    ObjectId("5937fd7ce104b51f143b0185"),
+    ObjectId("5937fda2e104b51f143b0186"),
+    ObjectId("5937fd4ea79abd01d8265739"),
+    ObjectId("5937fa01be67ac0674f2643e"),
+    ObjectId("5937faa6244047041038c839")
+  ],
+  "logoimage" : "/web/file/showImg?location=clubheadimg&name=2015210405075ps.jpg",
+  "introduction" : "大家一起来PS！",
+  "application" : [
+    {
+      "memberId" : ObjectId("5937f96c20983a2908dcc961"),
+      "statement" : "请输入申请理由18",
+      "_id" : ObjectId("59380fb733bc5037e41136ea")
+    },
+    {
+      "memberId" : ObjectId("5937f81da15c2219f09f5dac"),
+      "statement" : "请输入申请理由19",
+      "_id" : ObjectId("59380fe333bc5037e41136eb")
+    },
+    {
+      "memberId" : ObjectId("5937f5c93285cf3770ef71ed"),
+      "statement" : "请输入申请理由20",
+      "_id" : ObjectId("5938106333bc5037e41136ef")
+    }
+  ]
+}
+
+/* 4 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218ccee"),
+  "name" : "AE社",
+  "proprieterId" : ObjectId("5926b1be5abc0621e218cce7"),
+  "admins" : [
+    ObjectId("5926b1be5abc0621e218cce7"),
+    ObjectId("5926b1be5abc0621e218cce4")
+  ],
+  "members" : [
+    ObjectId("5926b1be5abc0621e218cce7"),
+    ObjectId("5926b1be5abc0621e218cce4"),
+    ObjectId("5937fba9ae425317008e5d53"),
+    ObjectId("5937fa825be0831bd4807a3a"),
+    ObjectId("5937fcb4e104b51f143b0181"),
+    ObjectId("5937fd58e104b51f143b0184"),
+    ObjectId("5937fd7ce104b51f143b0185"),
+    ObjectId("5937fdafa79abd01d826573b"),
+    ObjectId("5937fd80a79abd01d826573a"),
+    ObjectId("5937fd4ea79abd01d8265739"),
+    ObjectId("5937faa6244047041038c839"),
+    ObjectId("5937fa01be67ac0674f2643e"),
+    ObjectId("5937faa6244047041038c839"),
+    ObjectId("5937f5c93285cf3770ef71ed"),
+    ObjectId("5937f81da15c2219f09f5dac"),
+    ObjectId("5937fb0ea79abd01d8265737"),
+    ObjectId("5937fa01be67ac0674f2643e")
+  ],
+  "logoimage" : "/web/file/showImg?location=clubheadimg&name=2015210405075ae.jpg",
+  "introduction" : "大家一起做视频！",
+  "application" : [
+    {
+      "memberId" : ObjectId("5937fcc5a79abd01d8265738"),
+      "statement" : "请输入申请理由14",
+      "_id" : ObjectId("59380e5c33bc5037e41136dc")
+    },
+    {
+      "memberId" : ObjectId("5937f96c20983a2908dcc961"),
+      "statement" : "请输入申请理由18",
+      "_id" : ObjectId("59380fac33bc5037e41136e9")
+    }
+  ]
+}
+
+/* 5 */
+{
+  "_id" : ObjectId("5926b1be5abc0621e218ccef"),
+  "name" : "读书社",
+  "proprieterId" : ObjectId("5926b1be5abc0621e218cce8"),
+  "admins" : [
+    ObjectId("5926b1be5abc0621e218cce8"),
+    ObjectId("5926b1be5abc0621e218cce4")
+  ],
+  "members" : [
+    ObjectId("5926b1be5abc0621e218cce8"),
+    ObjectId("5926b1be5abc0621e218cce4")
+  ],
+  "logoimage" : "/web/file/showImg?location=clubheadimg&name=2015210405075read.jpg",
+  "introduction" : "大家一起来看书！",
+  "application" : [
+    {
+      "memberId" : ObjectId("5937f384faf14d1fd4d05ce2"),
+      "statement" : "3",
+      "_id" : ObjectId("5937f6a2e98de4205c99111d")
+    },
+    {
+      "memberId" : ObjectId("5937fba9ae425317008e5d53"),
+      "statement" : "2",
+      "_id" : ObjectId("5938094b33bc5037e41136bc")
+    },
+    {
+      "memberId" : ObjectId("5937fc58e104b51f143b0180"),
+      "statement" : "4",
+      "_id" : ObjectId("593809ad33bc5037e41136c0")
+    },
+    {
+      "memberId" : ObjectId("5937fcdae104b51f143b0182"),
+      "statement" : "6",
+      "_id" : ObjectId("59380a8133bc5037e41136c4")
+    },
+    {
+      "memberId" : ObjectId("5937fd31e104b51f143b0183"),
+      "statement" : "7",
+      "_id" : ObjectId("59380b6a33bc5037e41136c8")
+    },
+    {
+      "memberId" : ObjectId("5937fd7ce104b51f143b0185"),
+      "statement" : "请输入申请理由9",
+      "_id" : ObjectId("59380c6033bc5037e41136cf")
+    },
+    {
+      "memberId" : ObjectId("5937fda2e104b51f143b0186"),
+      "statement" : "请输入申请理由10",
+      "_id" : ObjectId("59380cce33bc5037e41136d0")
+    },
+    {
+      "memberId" : ObjectId("5937fdafa79abd01d826573b"),
+      "statement" : "请输入申请理由11",
+      "_id" : ObjectId("59380d9333bc5037e41136d3")
+    },
+    {
+      "memberId" : ObjectId("5937fd80a79abd01d826573a"),
+      "statement" : "请输入申请理由11",
+      "_id" : ObjectId("59380dd533bc5037e41136d6")
+    },
+    {
+      "memberId" : ObjectId("5937fd4ea79abd01d8265739"),
+      "statement" : "请输入申请理由13",
+      "_id" : ObjectId("59380e1a33bc5037e41136d9")
+    },
+    {
+      "memberId" : ObjectId("5937fb0ea79abd01d8265737"),
+      "statement" : "请输入申请理由15",
+      "_id" : ObjectId("59380ea333bc5037e41136de")
+    },
+    {
+      "memberId" : ObjectId("5937faa6244047041038c839"),
+      "statement" : "请输入申请理由16",
+      "_id" : ObjectId("59380efd33bc5037e41136e2")
+    },
+    {
+      "memberId" : ObjectId("5937fa01be67ac0674f2643e"),
+      "statement" : "请输入申请理由17",
+      "_id" : ObjectId("59380f5d33bc5037e41136e7")
+    },
+    {
+      "memberId" : ObjectId("5937f96c20983a2908dcc961"),
+      "statement" : "请输入申请理由18",
+      "_id" : ObjectId("59380f9c33bc5037e41136e8")
+    }
+  ]
+}

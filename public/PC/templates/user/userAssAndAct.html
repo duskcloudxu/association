@@ -1,0 +1,51 @@
+<div class="container view-assandact">
+    <div class="col-xs-8 view-assandact-left">
+        <div class="row">
+            <div class="col-xs-12 assandact-left-head">我参加的活动</div>
+        </div>
+        <div class="messagebox">
+            <div class="row message"  ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-repeat="i in res">
+                <div class="row message-headline">
+                    <div class="activityInf-top xt-flex">
+                        <div class=" message-headline-title">{{i.title}}</div>
+                        <div class="xt-flex-grow"></div>
+                        <div>{{showDate(i.time)}}</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 activityInf-content message-content">
+                        <div class="xt-text contentbox" ng-bind-html="i.content | to_trusted"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="message-viewAll" ng-show="hoverEdit" ng-click="view(i)">
+                        <span class="fa fa-book"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4 view-assandact-right ">
+        <div class="row assandact-right-head">
+            我的社团
+        </div>
+        <div class="row">
+            <div class=" association row"ng-repeat="i in asso">
+                <div class="row association-headline">
+                    <div class="xt-flex">
+                        <img ng-src="{{i.logoimage}}" alt="logo">
+                        <div class="xt-flex-grow "></div>
+                        <div class="association-headline-title">{{i.name}}</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="xt-flex-selfAlignend xt-flex-rightend  association-bottom">
+                        <div><a class="association-button fa fa-home" ng-click="clubHomepage(i)"></a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

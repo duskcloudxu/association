@@ -1,0 +1,53 @@
+<ion-view view-title="入社申请">
+    <ion-content>
+        <div class="list">
+
+            <label class="item item-input">
+                <span class="input-label">Name</span>
+                <input type="text">
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">Class</span>
+                <input type="text">
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">Student_ID</span>
+                <input type="text">
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">E-mail</span>
+                <input type="text">
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">Phone_number</span>
+                <input type="text">
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">Interest</span>
+                <input type="text">
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">Sex(Choose one of the following)</span>
+            </label>
+
+            <div class="row">
+                <div class="col-50">
+                    <ion-radio ng-model="choice" ng-value="'A'">Boy</ion-radio>
+                </div>
+                <div class="col-50">
+                    <ion-radio ng-model="choice" ng-value="'B'">Girl</ion-radio>
+                </div>
+            </div>
+
+            <label class="item">
+                <button class="button button-block button-positive" type="submit">Submit</button>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>

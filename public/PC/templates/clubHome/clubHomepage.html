@@ -1,0 +1,38 @@
+<meta charset='UTF-8'>
+<link href='./css/clubHome/clubHomepage.css' rel='stylesheet'>
+<div class="container-fluid">
+    <div class="row">
+        <div class="dyj-head">
+            <div class="dyj-head-content">
+                <div class="dyj-head-title">社团空间</div>
+                <p>{{club.name}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="dyj-navigation">
+            <div ng-click="clubIntroduction()" class="col-md-3 col-xs-3 dyj-circle-middle dyj-position-introduction">
+                <a ng-click="clubIntroduction()" class="dyj-circle-layout">社团介绍</a>
+                <div class="dyj-middle-border img-circle"></div>
+            </div>
+            <div ng-click="clubActivity()" class="col-md-3 col-xs-3 dyj-circle-large dyj-position-activity">
+                <a ng-click="clubActivity()" class="dyj-circle-layout">活动列表</a>
+                <div class="dyj-large-border img-circle"></div>
+            </div>
+            <div ng-click="clubApplication()" class="col-md-3 col-xs-3 dyj-circle-middle dyj-position-application">
+                <a ng-click="clubApplication()" class="dyj-circle-layout">入社申请</a>
+                <div class="dyj-middle-border img-circle"></div>
+            </div>
+            <div ng-click="clubDownload()" class="col-md-3 col-xs-3 dyj-circle-middle dyj-position-material">
+                <a ng-click="clubDownload()" class="dyj-circle-layout">资料下载</a>
+                <div class="dyj-middle-border img-circle"></div>
+            </div>
+            <div ng-click="back()" class="col-md-3 col-xs-3 dyj-circle-small dyj-position-homepage">
+                <a ng-click="back()" class="dyj-circle-layout">返回</a>
+                <div class="dyj-small-border img-circle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="dyj-view" ui-view ></div>
+</div>

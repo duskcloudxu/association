@@ -1,0 +1,31 @@
+body {
+  background-color: #ffffff;
+  margin-right: -15px;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.fkq-home {
+  background-color: inherit;
+  color: transparent;
+  font-family: 华文行楷;
+  text-shadow: 5px 5px 0px white;
+}
+.fkq-home h1 {
+  font-size: 100px;
+  opacity: 0.8;
+}
+.fkq-home .fkq-view {
+  position: relative;
+  margin-bottom: -20px;
+  font-family: 微软雅黑;
+}
+.fkq-home .fkq-view a {
+  background-color: inherit;
+  color: wheat;
+  transition: all 0.5s linear;
+  text-shadow: 5px 5px 49px #4566b3;
+}
+.fkq-home .fkq-view a:hover {
+  background: rgba(36, 135, 207, 0.5);
+}

@@ -1,0 +1,35 @@
+<div class="container">
+    <h1 class="xt-flex-center">社团资料</h1>
+    <div class="row">
+        <div class="col-xs-12 xt-flex-rightend addBtn">
+            <span ng-click="addFile()" class="fa fa-plus fa-2x"></span>
+        </div>
+    </div>
+    <div class="messagebox">
+        <div class="row message" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()"
+             ng-repeat="i in data | orderBy:'time':true">
+            <div class="row message-headline">
+                <div class="activityInf-top xt-flex">
+                    <div class=" message-headline-title">{{i.title}}</div>
+                    <div class="xt-flex-grow"></div>
+                    <div class="message-headline-time">{{dateArray[$index]}}</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 activityInf-content message-content">
+                    <div class="xt-text">&nbsp;&nbsp;{{i.content}}</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="message-download " ng-show="hoverEdit" ng-click="download(i)">
+                    <span class="fa fa-download"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="message-delete" ng-show="hoverEdit" ng-click="delFile(i._id)">
+                    <span class="fa fa-trash"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

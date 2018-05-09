@@ -1,0 +1,118 @@
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.chy-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-animation: slideIn 1s;
+  border-radius: 5px;
+  /*动画开始前*/
+  /*动画过程*/
+  /*不同时出现*/
+}
+.chy-box .chy-item:first-child,
+.chy-box .chy-item:nth-child(6) {
+  border-left: 1px solid #FFAC13;
+  border-top: 1px solid #FFAC13;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item:nth-child(2),
+.chy-box .chy-item:nth-child(7) {
+  border-left: 1px solid #83C44E;
+  border-top: 1px solid #83C44E;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item:nth-child(3),
+.chy-box .chy-item:nth-child(8) {
+  border-left: 1px solid #2196F3;
+  border-top: 1px solid #2196F3;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item:nth-child(4),
+.chy-box .chy-item:nth-child(9) {
+  border-left: 1px solid #E53935;
+  border-top: 1px solid #E53935;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item:nth-child(5),
+.chy-box .chy-item:nth-child(10) {
+  border-left: 1px solid #00C0A5;
+  border-top: 1px solid #00C0A5;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item:hover:first-child,
+.chy-box .chy-item:hover:nth-child(6) {
+  border-left: 2px solid #FFAC13;
+  border-top: 2px solid #FFAC13;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item:hover:nth-child(2),
+.chy-box .chy-item:hover:nth-child(7) {
+  border-left: 2px solid #83C44E;
+  border-top: 2px solid #83C44E;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item:hover:nth-child(3),
+.chy-box .chy-item:hover:nth-child(8) {
+  border-left: 2px solid #2196F3;
+  border-top: 2px solid #2196F3;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item:hover:nth-child(4),
+.chy-box .chy-item:hover:nth-child(9) {
+  border-left: 2px solid #E53935;
+  border-top: 2px solid #E53935;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item:hover:nth-child(5),
+.chy-box .chy-item:hover:nth-child(10) {
+  border-left: 2px solid #00C0A5;
+  border-top: 2px solid #00C0A5;
+  border-top-left-radius: 8%;
+}
+.chy-box .chy-item {
+  position: relative;
+  box-sizing: border-box;
+  width: 30%;
+  height: 200px;
+  margin: 20px 0 20px 30px;
+  text-align: center;
+  border-radius: 5%;
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.14);
+}
+.chy-box .chy-item h1 {
+  margin-top: 15%;
+  color: inherit;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 5px 5px 10px #4566b3;
+}
+.chy-box .chy-item p {
+  margin-top: 4%;
+  font-size: 20px;
+  color: #cade31;
+}
+.chy-box .chy-item:hover {
+  margin: 10px 0 20px 30px;
+  opacity: 1;
+  box-shadow: 5px 5px 30px 3px rgba(66, 66, 66, 0.19);
+  transition: all linear 0.1s;
+  background: rgba(0, 0, 0, 0.52);
+  cursor: pointer;
+}
+.chy-box .chy-item.ng-enter {
+  opacity: 0;
+}
+.chy-box .chy-item.ng-enter .ng-enter-active {
+  opacity: 1;
+}
+.chy-box .chy-item.ng-enter-stagger {
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+}

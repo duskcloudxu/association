@@ -1,0 +1,19 @@
+<ion-view view-title="Introduction">
+    <ion-content class="chy-introduction">
+
+        <ion-refresher  pulling-text="下拉刷新..."  on-refresh="doRefresh()">
+        </ion-refresher>
+
+        <div class="content ionic-pseudo">
+<!---->
+            <div class="list">
+                <a  ng-repeat="data in datas" class="item item-thumbnail-left" ng-click="clubHomepage(data)">
+                    <img ng-src="{{data.logoimage}}">
+                    <h2>{{data.name}}</h2>
+                    <p>社长:{{data.adminName}}</p>
+                </a>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>

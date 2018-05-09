@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="./css/admin/associationManagement.css">
+<div class="xt-currentAssociation " ng-click="back()" ng-mouseover="change($event)" ng-mouseleave="changeBack($event)">{{AssociationName}}</div>
+<div class="xt-box">
+    <div class="xt-box-buttonContainer">
+        <a class="xt-bgdcolor-black" ng-click="navStatus='xt-navbar-black'"  ui-sref=".dataManagement">资料管理</a>
+        <a class="xt-bgdcolor-blue" ng-click="navStatus='xt-navbar-blue'" ui-sref=".activityManagement">活动管理</a>
+        <a class="xt-bgdcolor-yellow"  ng-click="navStatus='xt-navbar-yellow'" ui-sref=".newsManagement">新闻管理</a>
+        <a class="xt-bgdcolor-purple"  ng-click="navStatus='xt-navbar-purple'" ui-sref=".memberManagement">社员管理</a>
+    </div>
+    <div class="box-view-navbar" ng-class="navStatus"></div>
+    <div ui-view class="xt-box-view">
+
+    </div>
+</div>
