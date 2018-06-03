@@ -12,18 +12,21 @@
                 <div class="showboard-item-content xt-flex-center xt-flex-zero xt-flex-col4">{{showDate(i.time)}}</div>
             </div>
             <div class="col-xs-3 xt-flex-center">
-            <a ng-click="activityInform(i)" ng-show="hoverEdit"  class="showboard-item-btn xt-flex-center">
-                <span class="fa fa-eye"></span>
-            </a>
-            <a ng-click="activityEdit(i)" ng-show="hoverEdit"  class="showboard-item-btn xt-flex-center">
-                <span class="fa fa-edit"></span>
-            </a>
-            <a class="showboard-item-btn xt-flex-center" ng-show="hoverEdit"  ng-click="delActivity(i._id)">
-                <span class="fa fa-trash"></span>
-            </a>
-        </div>
+                <a ng-click="activityInform(i)" ng-show="hoverEdit" class="showboard-item-btn xt-flex-center">
+                    <span class="fa fa-eye"></span>
+                </a>
+                <a ng-click="activityEdit(i)" ng-show="hoverEdit" class="showboard-item-btn xt-flex-center">
+                    <span class="fa fa-edit"></span>
+                </a>
+                <a ng-click="delActivity(i._id)" ng-show="hoverEdit" class="showboard-item-btn xt-flex-center">
+                    <span class="fa fa-trash"></span>
+                </a>
+                <a ng-click="viewAttendedMember(i._id)" ng-show="hoverEdit" class="showboard-item-btn xt-flex-center" >
+                    <span class="fa fa-user"></span>
+                </a>
+            </div>
             <div>
 
-    </div>
+            </div>
 
-</div>
+        </div>

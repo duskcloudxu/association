@@ -127,6 +127,12 @@ angular.module('app.routes', ['ui.router'])
                 controller: 'memberManagementCtrl'
 
             })
+            .state('associationManagement.viewAttendedMember', {
+              url: '/viewAttendedMember',
+              templateUrl: './templates/admin/viewAttendedMember.html',
+              controller: 'viewAttendedMemberCtrl'
+
+            })
             .state('showApplication', {
                 url: '/showApplication',
                 templateUrl: './templates/admin/showApplication.html',

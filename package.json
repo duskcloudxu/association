@@ -14,7 +14,7 @@
     "ejs": "~2.5.5",
     "express": "~4.14.1",
     "less-middleware": "~2.2.0",
-    "mongoose": "^4.7.8",
+    "mongoose": "4.7.8",
     "morgan": "~1.7.0",
     "nodemailer": "^0.7.1",
     "serve-favicon": "~2.3.2",
