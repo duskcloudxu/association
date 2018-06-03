@@ -24530,6 +24530,7 @@ UE.plugin.register('simpleupload', function (){
                             loader.setAttribute('alt', json.original || '');
                             loader.removeAttribute('id');
                             domUtils.removeClasses(loader, 'loadingclass');
+                            me.execCommand('inserthtml', ''); // 插入一个空字符串来触发$apply
                         } else {
                             showErrorLoader && showErrorLoader(json.state);
                         }
