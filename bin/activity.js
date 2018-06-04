@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
@@ -29,10 +30,40 @@ client.on('error', function (err) {
 });
 
 const app = express();
-app.listen(8080);
+app.on('error', function (error) {
+    if (error.syscall !== 'listen') {
+        throw error;
+    }
 
-kue.app.listen(8081);
-console.log('kue UI started on port http://localhost:8081');
+    const bind = typeof port === 'string'
+        ? 'Pipe ' + port
+        : 'Port ' + port;
+
+    // handle specific listen errors with friendly messages
+    switch (error.code) {
+        case 'EACCES':
+            console.error(bind + ' requires elevated privileges');
+            process.exit(1);
+            break;
+        case 'EADDRINUSE':
+            console.error(bind + ' is already in use');
+            process.exit(1);
+            break;
+        default:
+            throw error;
+    }
+});
+app.on('listening', function () {
+    const addr = server.address();
+    const bind = typeof addr === 'string'
+        ? 'pipe ' + addr
+        : 'port ' + addr.port;
+    debug('Listening on ' + bind);
+});
+app.listen(8888);
+
+kue.app.listen(8889);
+console.log('kue UI started on port http://localhost:8889');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -45,7 +76,7 @@ app.use(cookieParser());
 
 app.use(function (req, res, next) {
     res.setHeader("Access-Control-Allow-Origin", "*"); //允许哪些url可以跨域请求到本域
-    res.setHeader("Access-Control-Allow-Methods", "GET,POST"); //允许的请求方法，一般是GET,POST,PUT,DELETE,OPTIONS
+    res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS"); //允许的请求方法，一般是GET,POST,PUT,DELETE,OPTIONS
     res.setHeader("Access-Control-Allow-Headers", "x-requested-with,content-type,Token"); //允许哪些请求头可以跨域
     res.error = function (errorCode, errorReason) {
         const restResult = new RestResult();
