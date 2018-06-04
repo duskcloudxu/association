@@ -206,8 +206,6 @@ app.post('/web/activity/editActivity', function (req, res, next) {
     //         res.success(doc);
     //     });
 });
-apply()
-release()
 
 /**
  * 根据ID搜索活动
