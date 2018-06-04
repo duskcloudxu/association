@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text" style="width:100px;">活动id</span>
+    </div>
+    <input id="id" type="text" class="form-control">
+</div>
+<div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text" style="width:100px;">人数</span>
+    </div>
+    <input id="number" type="text" class="form-control">
+</div>
+<div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text" style="width:100px;">uid</span>
+    </div>
+    <input id="uid" type="text" class="form-control">
+</div>
+
+<button onclick="release()" class="form-control">发布</button>
+<br/>
+<button onclick="apply()" class="form-control">报名</button>
+<br/>
+<script>
+    function release() {
+        let id = $('#id').val();
+        let number = $('#number').val();
+        axios.post('http://localhost:8080/release', {
+            id,
+            number
+        })
+            .then(console.log)
+    }
+
+    function apply() {
+        axios.post('http://localhost:8080/apply', {
+            activityid: $('#id').val(),
+            uid: $('#uid').val(),
+        })
+            .then(console.log)
+    }
+</script>
+</body>
+</html>
