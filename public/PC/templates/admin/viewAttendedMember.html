@@ -1,0 +1,18 @@
+<div class="container xt-showboard">
+    <h1 class="xt-flex-center">查看报名</h1>
+    <div class="row" ng-repeat="i in member" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+
+        <div class="col-xs-12 xt-flex-center xt-showboard-item">
+            <div class="col-xs-12 xt-flex">
+                <div class="showboard-item-content xt-flex-center xt-flex-zero xt-flex-col4">{{i.name}}</div>
+            </div>
+            <div class="col-xs-3 xt-flex-center">
+                <a ng-click="showMemberInfo(i)" ng-show="hoverEdit" ng-if="i.type!=='申请者'"class="showboard-item-btn xt-flex-center">
+                    <span class="fa fa-eye"></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
