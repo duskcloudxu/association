@@ -1,42 +1,41 @@
 .chy-box {
   width: 100%;
-  margin-left: 5%;
   display: flex;
 }
 .chy-box > div:first-child {
-  margin-left: 1%;
   margin-top: 4%;
 }
 .chy-box > div:first-child p {
   margin-left: 2%;
-  color: rgba(129, 157, 244, 0.93);
+  color: #ffffff;
   font-size: 20px;
   font-family: 楷体;
 }
 .chy-box > div:nth-child(2) {
-  margin-left: 8%;
+  margin-left: 5%;
   margin-top: 8%;
 }
 .chy-box > div:nth-child(2) > p:first-child {
-  color: rgba(129, 157, 244, 0.93);
+  color: #ffffff;
   font-size: 20px;
   font-family: 楷体;
 }
-.chy-box > div:nth-child(2) textarea {
+.chy-box > div:nth-child(2) .activity-name {
+  width: 300px;
   height: 30px;
   border: 1px solid #DFD7F4;
-  margin-left: 5%;
   color: rgba(129, 157, 244, 0.93);
 }
 .chy-box .chy-activityEdit-tips {
   display: flex;
   margin-top: 10%;
 }
-.chy-box .chy-activityEdit-tips div:nth-of-type(2) {
+.chy-box .chy-activityEdit-tips div:nth-of-type(2),
+.chy-box .chy-activityEdit-tips div:nth-of-type(3) {
   margin-left: 10%;
 }
 .chy-box .chy-activityEdit-tips div p {
-  color: #131DFA;
+  color: #ffffff;
   font-size: 20px;
   font-family: 楷体;
 }
@@ -47,6 +46,8 @@
 }
 .chy-box .chy-activityEdit-association {
   text-align: center;
+  margin-left: 10%;
+  margin-top: 10px;
 }
 .chy-box .chy-activityEdit-association p {
   padding-top: 20px;
@@ -64,7 +65,7 @@
 .chy-box .chy-edit-btn {
   display: flex;
   margin-left: 80%;
-  margin-top: 30%;
+  margin-top: 10%;
 }
 .chy-box .btn {
   font-size: 20px;
@@ -72,6 +73,12 @@
   border-radius: 5px;
   color: #819DF4;
   border-color: rgba(66, 66, 66, 0.33);
+}
+.chy-box .btn:link,
+.chy-box .btn:visited,
+.chy-box .btn:hover,
+.chy-box .btn:active {
+  outline: none;
 }
 .chy-box .btn:hover {
   color: #FA8072;
