@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "private": false,
   "scripts": {
-    "start": "node ./bin/www",
-    "pm2": "pm2 ./bin/www -i 4 -n association"
+    "start": "node ./bin/www.js",
+    "pm2:start": "pm2 start ./bin/www.js -i 4 -n association && pm2 start ./bin/activity.js -n activity",
+    "pm2:stop":"pm2 stop activity && pm2 stop association",
+    "pm2:delete":"pm2 delete activity && pm2 delete association",
+    "pm2:restart":"pm2 restart activity && pm2 restart association"
   },
   "dependencies": {
     "async": "2.1.4",

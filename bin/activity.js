@@ -147,6 +147,7 @@ app.post('/web/activity/addActivity', function (req, res, next) {
     let activity = {
         title: req.body.activity.title,
         content: req.body.activity.content,
+        number: req.body.activity.number,
         time: req.body.activity.time,
         place: req.body.activity.place,
         associationId: req.body.activity.association._id,

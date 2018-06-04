@@ -10,9 +10,10 @@ angular.module('app', [
     'ngImgCrop'    //截图插件
 ])
 
-    .constant('hostip', 'http://localhost:3000/')  //本地开发环境地址
-    //.constant('hostip', 'http://192.168.1.170:3000/')  //本地开发环境地址
-    //.constant('hostip', 'http://123.206.111.244:3000/')  //正式环境地址
+    .constant('hostip', 'http://localhost:3000/')  // 本地开发环境地址
+    //.constant('hostip', 'http://192.168.1.170:3000/')  // 本地开发环境地址
+    //.constant('hostip', 'http://123.206.111.244:3000/')  // 正式环境地址
+    .constant('activityip', 'http://localhost:8080/')  // redis 和 kue 单机地址
 
     .filter('to_trusted', ['$sce', function ($sce) {
         return function (text) {

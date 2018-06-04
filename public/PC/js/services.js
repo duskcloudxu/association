@@ -1,6 +1,6 @@
 angular.module('app.services', [])
 
-    .factory('SystemService', function ($q, $http, hostip) {
+    .factory('SystemService', function ($q, $http, hostip,activityip) {
         let user = null;
         let uid = null;
         let loginToken = null;
@@ -51,6 +51,9 @@ angular.module('app.services', [])
             getHostIP: function () {
                 // return window.location.protocol + '//' + window.location.host;
                 return hostip;
+            },
+            getActivityIP: function () {
+                return activityip;
             },
             getLoginToken: function () {
                 if (!loginToken) {
@@ -250,7 +253,7 @@ angular.module('app.services', [])
                 activity: activity,
             };
             $http.defaults.headers.common['Token'] = SystemService.getLoginToken();
-            $http.post(SystemService.getHostIP() + 'web/activity/addActivity', param)
+            $http.post(SystemService.getActivityIP() + 'web/activity/addActivity', param)
                 .then(function (restResult, status, headers, config) {
                     let data = restResult.data;
                     if (data.code == 0) {
@@ -267,7 +270,7 @@ angular.module('app.services', [])
         this.showAllActivity = function () {
             const deferred = $q.defer();
             $http.defaults.headers.common['Token'] = SystemService.getLoginToken();
-            $http.post(SystemService.getHostIP() + 'web/activity/showAllActivity')
+            $http.post(SystemService.getActivityIP() + 'web/activity/showAllActivity')
                 .then(function (restResult, status, headers, config) {
                     let data = restResult.data;
                     console.log(data);
@@ -289,7 +292,7 @@ angular.module('app.services', [])
                 activity: activity,
             };
             $http.defaults.headers.common['Token'] = SystemService.getLoginToken();
-            $http.post(SystemService.getHostIP() + 'web/activity/editActivity', param)
+            $http.post(SystemService.getActivityIP() + 'web/activity/editActivity', param)
                 .then(function (restResult, status, headers, config) {
                     let data = restResult.data;
                     if (data.code == 0) {
@@ -310,7 +313,7 @@ angular.module('app.services', [])
             };
             console.log(param);
             $http.defaults.headers.common['Token'] = SystemService.getLoginToken();
-            $http.post(SystemService.getHostIP() + 'web/activity/findActivityById', param)
+            $http.post(SystemService.getActivityIP() + 'web/activity/findActivityById', param)
                 .then(function (restResult, status, headers, config) {
                     let data = restResult.data;
                     if (data.code == 0) {
@@ -333,7 +336,7 @@ angular.module('app.services', [])
             };
             console.log(param);
             $http.defaults.headers.common['Token'] = SystemService.getLoginToken();
-            $http.post(SystemService.getHostIP() + 'web/activity/attendActivity', param)
+            $http.post(SystemService.getActivityIP() + 'web/activity/attendActivity', param)
                 .then(function (restResult, status, headers, config) {
                     let data = restResult.data;
                     if (data.code == 0) {
@@ -353,7 +356,7 @@ angular.module('app.services', [])
                 associationId: associationId,
             };
             $http.defaults.headers.common['Token'] = SystemService.getLoginToken();
-            $http.post(SystemService.getHostIP() + 'web/activity/showAllActivityByAssociationId', param)
+            $http.post(SystemService.getActivityIP() + 'web/activity/showAllActivityByAssociationId', param)
                 .then(function (restResult, status, headers, config) {
                     let data = restResult.data;
                     console.log(data);
@@ -374,7 +377,7 @@ angular.module('app.services', [])
                 activityId: activityId,
             };
             $http.defaults.headers.common['Token'] = SystemService.getLoginToken();
-            $http.post(SystemService.getHostIP() + 'web/activity/delActivity', param)
+            $http.post(SystemService.getActivityIP() + 'web/activity/delActivity', param)
                 .then(function (restResult, status, headers, config) {
                     let data = restResult.data;
                     console.log(data);
