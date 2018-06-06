@@ -1,7 +1,14 @@
 <link rel="stylesheet" href="./css/home/introduction.css">
 <div class="chy-box">
     <div ng-repeat="data in datas" class="chy-item" ng-click="clubHomepage(data)">
-        <h1>{{data.name}}</h1>
-        <p>社长:{{data.adminName}}</p>
+        <div class="add-association">
+            <h3>{{data.name}}</h3>
+            <span class="glyphicon glyphicon-plus-sign"></span>
+        </div>
+        <!--<p>社长:{{data.adminName}}</p>-->
+        <!--todo 为了展示效果写死的图片 实际应显示社团的宣传图片-->
+        <div class="poster">
+            <img src="image/index.jpg">
+        </div>
     </div>
 </div>

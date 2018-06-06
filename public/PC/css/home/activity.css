@@ -1,117 +1,56 @@
-@-webkit-keyframes slideIn {
-  0% {
-    transform: translateX(900px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 .chy-box {
+  width: 95%;
+  margin: auto;
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  -webkit-animation: 1s slideIn;
-}
-.chy-box .chy-item:first-child,
-.chy-box .chy-item:nth-child(6) {
-  border-top: 2px solid #FFAC13;
-  border-bottom: 5px solid #FFAC13;
-}
-.chy-box .chy-item:nth-child(2),
-.chy-box .chy-item:nth-child(7) {
-  border-top: 1px solid #83C44E;
-  border-bottom: 5px solid;
-}
-.chy-box .chy-item:nth-child(3),
-.chy-box .chy-item:nth-child(8) {
-  border-top: 1px solid #2196F3;
-  border-bottom: 5px solid #2196F3;
-}
-.chy-box .chy-item:nth-child(4),
-.chy-box .chy-item:nth-child(9) {
-  border-top: 1px solid #ffcfb0;
-  border-bottom: 5px solid #ffcfb0;
-}
-.chy-box .chy-item:nth-child(5),
-.chy-box .chy-item:nth-child(10) {
-  border-top: 1px solid #00C0A5;
-  border-bottom: 5px solid #00C0A5;
-}
-.chy-box .chy-item:hover:first-child,
-.chy-box .chy-item:hover:nth-child(6) {
-  border-top: 2px solid #FFAC13;
-  border-bottom: 5px solid #FFAC13;
-}
-.chy-box .chy-item:hover:nth-child(2),
-.chy-box .chy-item:hover:nth-child(7) {
-  border-top: 2px solid #83C44E;
-  border-bottom: 5px solid #83C44E;
-}
-.chy-box .chy-item:hover:nth-child(3),
-.chy-box .chy-item:hover:nth-child(8) {
-  border-top: 2px solid #2196F3;
-  border-bottom: 5px solid #2196F3;
-}
-.chy-box .chy-item:hover:nth-child(4),
-.chy-box .chy-item:hover:nth-child(9) {
-  border-top: 2px solid #ffcfb0;
-  border-bottom: 5px solid #ffcfb0;
-}
-.chy-box .chy-item:hover:nth-child(5),
-.chy-box .chy-item:hover:nth-child(10) {
-  border-top: 2px solid #00C0A5;
-  border-bottom: 5px solid #00C0A5;
+  justify-content: space-between;
 }
 .chy-box .chy-item {
   box-sizing: border-box;
   border-radius: 5px;
+  width: 30%;
+  height: 210px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  background-color: #ffffff;
+}
+.chy-box .chy-item .poster {
   width: 100%;
-  margin: -10px 0 20px 20px;
-  transition: all linear 0.5s;
-  background-color: rgba(255, 255, 255, 0.9);
+}
+.chy-box .chy-item .poster img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 .chy-box .chy-item h3 {
-  margin-top: 10px;
-  color: #3D8AFF;
-  padding: 10px;
+  margin-bottom: 0 !important;
+  margin-top: 10px !important;
+  margin-left: 5px;
 }
 .chy-box .chy-item .chy-content {
-  border-radius: 5px;
-  transition: max-height 1s;
-  background: #e5feff;
-  overflow: hidden;
-  max-height: 0;
+  position: relative;
 }
-.chy-box .chy-item .chy-content p {
-  margin-left: 10px;
+.chy-box .chy-item .chy-content .club-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 10px;
 }
-.chy-box .chy-item .chy-content .btncontainer {
-  display: flex;
-  justify-content: flex-end;
-  background: white;
+.chy-box .chy-item .chy-content .activity-time,
+.chy-box .chy-item .chy-content .activity-club-name {
+  margin-left: 60px;
 }
-.chy-box .chy-item .chy-content .btncontainer .btn {
-  justify-content: center;
-  align-items: center;
-  border: 1px black solid;
-  -webkit-border-radius: 5px;
-  margin: 10px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  color: black;
-  height: 30px;
-  cursor: pointer;
-  transition: 0.5s linear all;
+.chy-box .chy-item .chy-content .activity-time {
+  padding-top: 30px;
 }
-.chy-box .chy-item .chy-content .btncontainer .btn:hover {
-  color: white;
-  background-color: black;
-}
-.chy-box .chy-item:hover {
-  border-radius: 5px;
-  background: white;
-  opacity: 1;
-}
-.chy-box .chy-item:hover .chy-content {
-  max-height: 300px;
+.chy-box .chy-item .chy-content .glyphicon-bookmark {
+  font-size: 30px;
+  float: right;
+  margin-top: -42px;
+  right: 18px;
+  color: rgba(0, 0, 0, 0.1);
 }

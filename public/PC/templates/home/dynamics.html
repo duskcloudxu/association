@@ -1,11 +1,16 @@
 <link rel="stylesheet" href="./css/home/dynamics.css">
 <div class="chy-box">
-    <div ng-repeat="data in datas" class="chy-item" ng-click="newsInform(data)">
-        <img ng-src="{{data.imgSrc}}">
+    <div ng-repeat="data in datas" class="chy-item">
+        <div class="poster">
+            <img ng-src="{{data.imgSrc}}">
+        </div>
         <div class="chy-dynamics-message">
             <h3>{{data.title}}</h3>
-            <p>{{data.time | myDateTime}}</p>
-            <p>{{data.association.name}}</p>
+            <!--todo 为了展示效果写死的图片 实际应显示所属社团的logo-->
+            <img src="image/index.jpg" class="club-logo">
+            <p class="dynamics-time">{{data.time | myDateTime}}</p>
+            <p class="association-name">{{data.association.name}}</p>
+            <span class="glyphicon glyphicon-bookmark" ng-click="newsInform(data)"></span>
         </div>
     </div>
 </div>
