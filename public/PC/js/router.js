@@ -18,26 +18,20 @@ angular.module('app.routes', ['ui.router'])
 
 
             //-------------------------------------- 主页 登录 注册 home login register----------------------------------------
-            .state('home', {
-                url: '/home',
-                templateUrl: './templates/main/home.html',
-                controller: 'homeCtrl',
-                abstract: true
-            })
 
-            .state('home.dynamics', {
+            .state('dynamics', {
                 url: '/dynamics',
                 templateUrl: './templates/home/dynamics.html',
                 controller: 'dynamicsCtrl'
             })
 
-            .state('home.activity', {
+            .state('activity', {
                 url: '/activity',
                 templateUrl: './templates/home/activity.html',
                 controller: 'activityCtrl'
             })
 
-            .state('home.introduction', {
+            .state('introduction', {
                 url: '/introduction',
                 templateUrl: './templates/home/introduction.html',
                 controller: 'introductionCtrl'
