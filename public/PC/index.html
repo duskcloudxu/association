@@ -36,6 +36,11 @@
 <!-- navigation -->
 <!--加上navbar-fixed-top顶栏浮动-->
 <nav class="navbar navbar-inverse nav-style navbar-fixed-top" role="navigation">
+    <div class="home-nav">
+        <a ui-sref="activity" class="association-activity">社团活动</a>
+        <a ui-sref="introduction" class="association-introduction">社团介绍</a>
+        <a ui-sref="dynamics" class="association-news">社团动态</a>
+    </div>
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target-menu">
             <span class="sr-only">qieh</span>
@@ -46,17 +51,12 @@
         <div class="navbar-brand"><a class="fkq-header-title" href="../ppt/AssociationAdmin.htm"
                                      target="_blank">AIMS</a></div>
     </div>
-    <div class="collapse navbar-collapse" id="target-menu">
-        <ul class="nav navbar-nav">
-            <li><a ui-sref="activity" class="btn btn-warning">社团活动</a></li>
-            <li><a ui-sref="introduction" class="btn btn-default">社团介绍</a></li>
-            <li><a ui-sref="dynamics" class="btn btn-success">社团动态</a></li>
-            <li><a ui-sref="userCenter.myprofile" ng-click="ClearCenterNav()">用户</a></li>
-            <li><a ui-sref="about">关于</a></li>
-            <li><a ui-sref="login">登录/登出</a></li>
-            <li><a ui-sref="register">注册</a></li>
-        </ul>
+    <div class="login-and-register">
+        <a ui-sref="login">登录</a>
+        <a ui-sref="register">注册</a>
     </div>
+            <!--<a ui-sref="userCenter.myprofile" ng-click="ClearCenterNav()">用户</a>-->
+            <!--<a ui-sref="about">关于</a>-->
 
 </nav>
 <!--加一个没有navbar-fixed-top的防止顶栏浮动导致的内容上移-->

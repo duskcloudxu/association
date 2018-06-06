@@ -4,33 +4,47 @@
 .fkq-register {
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
-  padding: 5% 5% 0 5%;
+  margin-top: 30px;
+  width: 50%;
+  padding: 2% 5%;
+  border: 1px solid #E8F3EC;
+  border-radius: 5px;
 }
-.fkq-register .fkq-text-shadow {
-  text-shadow: 0 0 20px #f2f8ff;
-  color: #b5d1ff;
-  font-size: 20px;
-}
-.fkq-register .fkq-register-title {
-  align-items: center;
+.fkq-register .register-title {
   text-align: center;
-  align-content: center;
-  font-size: 80px;
+  font-size: 30px;
 }
-.fkq-register .fkq-checkbox {
+.fkq-register .number-line,
+.fkq-register .password-line,
+.fkq-register .password-again-line,
+.fkq-register .email-line,
+.fkq-register .nickname-line,
+.fkq-register .name-line,
+.fkq-register .sex-line,
+.fkq-register .mobile-line,
+.fkq-register .btns {
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+}
+.fkq-register .sex-line span {
+  color: #999999;
+}
+.fkq-register .btns {
   margin-top: 20px;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 10px;
-  height: 10px;
+  display: flex;
+  justify-content: center;
 }
-.fkq-register .fkq-submit {
+.fkq-register .btns .register-btn {
   width: 100%;
-  margin-top: 20px;
+  background-color: #0077e6;
+  border-color: #0077e6;
+  color: #ffffff;
+}
+.fkq-register input {
   background: 0 0;
   border: 0;
-  border-bottom: 1px solid #fafffa;
+  border-bottom: 1px solid #c2cad8;
   color: #555;
   box-shadow: none !important;
   padding-left: 0;
@@ -40,37 +54,10 @@
   line-height: 1.42857;
   display: block;
   border-radius: 0 !important;
-}
-.fkq-register .fkq-submit:hover {
-  color: #fff;
-  background-color: #33599d;
-  border-color: #273784;
-}
-.fkq-register button,
-.fkq-register button:hover {
-  transition: 0.5s all;
-  text-decoration: none;
-}
-.fkq-register input[type=text],
-.fkq-register input[type=password] {
-  margin-top: 3%;
-  background: 0 0;
-  border: 0;
-  border-bottom: 1px solid #fafffa;
-  color: #555;
-  box-shadow: none !important;
-  padding-left: 0;
-  padding-right: 0;
-  font-size: 14px;
-  outline: 0 !important;
-  line-height: 1.42857;
-  display: block;
-  border-radius: 0 !important;
-}
-.fkq-register input[type=text]:focus,
-.fkq-register input[type=password]:focus {
-  border-bottom: 1px solid #131cb7 !important;
 }
 .fkq-register .errinput {
   border-bottom: 1px solid red !important;
+}
+.fkq-register .radio-inline {
+  color: #999999;
 }

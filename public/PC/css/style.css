@@ -17,18 +17,23 @@ body {
   border-radius: 0;
 }
 .navbar .navbar-header {
-  width: 100%;
+  width: 20%;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
 .nav-style {
-  padding-left: 3%;
+  width: 80%;
+  margin: auto;
   padding-top: 5px;
+  padding-bottom: 20px;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   opacity: 0.8;
   font-size: 16px;
   font-family: 微软雅黑;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-style div:first-child .navbar-brand {
   color: rgba(0, 0, 0, 0.84) !important;
@@ -39,7 +44,15 @@ body {
   justify-content: center;
 }
 .nav-style a {
-  color: #FFFFFF !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.nav-style a:visited,
+.nav-style a:hover,
+.nav-style a:active {
+  color: rgba(0, 0, 0, 0.84) !important;
+  text-decoration: none;
 }
 .nav-style .fkq-header-title {
   color: rgba(0, 0, 0, 0.84) !important;
@@ -61,4 +74,16 @@ body {
 }
 .fkq-footer {
   color: white;
+}
+.home-nav {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+}
+.login-and-register {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
 }

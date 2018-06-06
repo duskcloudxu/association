@@ -1,28 +1,19 @@
 <link rel="stylesheet" href="./css/main/login.css">
-<star-canvas></star-canvas>
 <form>
-    <div class="fkq-center wj-center  wj-shadow ">
+    <div class="fkq-center">
         <div class="fkq-sign" ng-if="!islogin">
-            <div class="col-lg-12 wj-center">
-                <h1>login</h1>
-            </div>
-            <div class="col-lg-12"></div>
-            <div class="col-lg-12">
-                <input type="text" class="wj-form form-control" name="studentID" placeholder="请输入学号" autofocus
+            <div class="login-title">登录</div>
+            <div class="number-line">
+                <input type="text" class="form-control" name="studentID" placeholder="请输入学号" autofocus
                        ng-model="user.studentID"/>
             </div>
-            <div class="col-lg-12">
-                <input type="password" class="wj-form form-control" name="password" placeholder="请输入密码"
+            <div class="password-line">
+                <input type="password" class="form-control" name="password" placeholder="请输入密码"
                        ng-model="user.pwdText"/>
             </div>
-            <div class="col-lg-12"></div>
-            <div class="col-lg-12 fkq-checkbox"></div>
-            <div class="col-lg-12"></div>
-            <div class="col-lg-12">
-                <button type="submit" class="btn btn-success col-lg-12 wj-submit " ng-click="login()">登录</button>
-            </div>
-            <div class="col-lg-12">
-                <button type="submit" class="btn btn-success col-lg-12 wj-submit " ng-click="resetPwd()">重置密码</button>
+            <button type="submit" class="btn reset-pwd-btn " ng-click="resetPwd()">重置密码</button>
+            <div class="btns">
+                <button type="submit" class="btn login-btn " ng-click="login()">登录</button>
             </div>
         </div>
         <div ng-if="islogin" class="fkq-login">
