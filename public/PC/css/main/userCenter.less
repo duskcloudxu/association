@@ -3,10 +3,11 @@ html {
 }
 
 body {
-    background-image: url("../../image/userCenter.jpg") !important;
-    height: 100%;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    //background-image: url("../../image/userCenter.jpg") !important;
+    //height: 100%;
+    //background-size: 100% 100%;
+    //background-attachment: fixed;
+    //一期背景设置
 
 }
 
@@ -393,45 +394,124 @@ body {
 }
 
 //__________________________________________社团框设置_________________________________
-.xt-nav {
-    display: flex;
-    width: 50%;
-    a {
-        display: flex;
-        justify-content: center;
-        flex-grow: 0.9;
-        align-items: center;
-        height: 30px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin-left: -1px;
-        color: #464141;
-        font-family: 微软雅黑;
-        padding: 5px;
-    }
-    a:hover {
-        opacity: 1;
-        transition: all 1s;
-        text-decoration: none;
-    }
-    a:link {
-        text-decoration: none;
-    }
-    a:active {
-        text-decoration: none;
-    }
 
-}
+//__________________________________________下面是DIV元素设置___________________________
 
-.xt-navbar {
-    background-color: #ACB5C3;
+.xt-selfintro {
     position: relative;
-    width: 100%;
-    height: 8px;
-    margin-top: -1px;
-    margin-left: -1px;
-    border-radius: 0px 5px 0px 0px;
+    height: 300px;
+    .avatar {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .name {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .slogan {
+        min-height: 50px;
+        max-height: 100px;
+        width: calc(100% - 220px);
+        font-size: 19px;
+    }
+    .detail {
+        margin-top: 10px;
+        color: #0000008a;
+        font-size: 14px;
+    }
+    .editbutton{
+        margin-top: 10px;
+        width: 80px;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.34);
+        color: rgba(0, 0, 0, 0.34);
+        border-radius: 5px;
+        &:hover{
+            border: 1px solid black;
+            color: black;
+            cursor: pointer;
+        }
+    }
+
 }
+
+.xt-nav {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-bottom: #e5e5e5 solid 1px;
+    .nav-linkcontainer {
+        position: relative;
+        display: flex;
+        width: 50%;
+        a {
+            display: flex;
+            justify-content: center;
+            width: 33%;
+            align-items: center;
+            height: 30px;
+            color: #9E9E9E;
+            margin-left: -1px;
+            font-family: 微软雅黑;
+            padding: 5px;
+        }
+        a:hover {
+            opacity: 1;
+            transition: all 1s;
+            text-decoration: none;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        .first:hover ~ hr { //简单解释一下：这个能在绑定元素被hover的时候选中其他元素进行修改。
+            margin-left: 0%;
+        }
+        .second:hover ~ hr {
+            margin-left: 33%;
+        }
+        .third:hover ~ hr {
+            margin-left: 66%;
+        }
+        hr {
+            position: absolute;
+            left: 0px;
+            bottom: -1px;
+            height: 1px;
+            width: 33%;
+            margin: 0;
+            background:#696969;
+            border: none;
+            transition: .3s ease-in-out;
+        }
+        .hrFirst { //在ngClass里用来确定当前值
+            margin-left: 0%;
+        }
+        .hrSecond {
+            margin-left: 33%;
+        }
+        .hrThird {
+            margin-left: 66%;
+        }
+
+    }
+}
+
+//.xt-navbar {
+//    background-color: #ACB5C3;
+//    position: relative;
+//    width: 100%;
+//    height: 8px;
+//    margin-top: -1px;
+//    margin-left: -1px;
+//    border-radius: 0px 5px 0px 0px;
+//}
 
 .xt-view {
     font-family: 微软雅黑;

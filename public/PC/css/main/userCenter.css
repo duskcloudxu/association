@@ -1,12 +1,6 @@
 html {
   height: 100%;
 }
-body {
-  background-image: url("../../image/userCenter.jpg") !important;
-  height: 100%;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-}
 .row {
   margin: 0px;
 }
@@ -315,42 +309,107 @@ body {
   background-color: black;
   border-radius: 0px 0px 10px 10px;
 }
+.xt-selfintro {
+  position: relative;
+  height: 300px;
+}
+.xt-selfintro .avatar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.xt-selfintro .name {
+  font-size: 36px;
+  font-weight: bold;
+}
+.xt-selfintro .slogan {
+  min-height: 50px;
+  max-height: 100px;
+  width: calc(100% - 220px);
+  font-size: 19px;
+}
+.xt-selfintro .detail {
+  margin-top: 10px;
+  color: #0000008a;
+  font-size: 14px;
+}
+.xt-selfintro .editbutton {
+  margin-top: 10px;
+  width: 80px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.34);
+  color: rgba(0, 0, 0, 0.34);
+  border-radius: 5px;
+}
+.xt-selfintro .editbutton:hover {
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
 .xt-nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-bottom: #e5e5e5 solid 1px;
+}
+.xt-nav .nav-linkcontainer {
+  position: relative;
   display: flex;
   width: 50%;
 }
-.xt-nav a {
+.xt-nav .nav-linkcontainer a {
   display: flex;
   justify-content: center;
-  flex-grow: 0.9;
+  width: 33%;
   align-items: center;
   height: 30px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  color: #9E9E9E;
   margin-left: -1px;
-  color: #464141;
   font-family: 微软雅黑;
   padding: 5px;
 }
-.xt-nav a:hover {
+.xt-nav .nav-linkcontainer a:hover {
   opacity: 1;
   transition: all 1s;
   text-decoration: none;
 }
-.xt-nav a:link {
+.xt-nav .nav-linkcontainer a:link {
   text-decoration: none;
 }
-.xt-nav a:active {
+.xt-nav .nav-linkcontainer a:active {
   text-decoration: none;
 }
-.xt-navbar {
-  background-color: #ACB5C3;
-  position: relative;
-  width: 100%;
-  height: 8px;
-  margin-top: -1px;
-  margin-left: -1px;
-  border-radius: 0px 5px 0px 0px;
+.xt-nav .nav-linkcontainer .first:hover ~ hr {
+  margin-left: 0%;
+}
+.xt-nav .nav-linkcontainer .second:hover ~ hr {
+  margin-left: 33%;
+}
+.xt-nav .nav-linkcontainer .third:hover ~ hr {
+  margin-left: 66%;
+}
+.xt-nav .nav-linkcontainer hr {
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 1px;
+  width: 33%;
+  margin: 0;
+  background: #696969;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.xt-nav .nav-linkcontainer .hrFirst {
+  margin-left: 0%;
+}
+.xt-nav .nav-linkcontainer .hrSecond {
+  margin-left: 33%;
+}
+.xt-nav .nav-linkcontainer .hrThird {
+  margin-left: 66%;
 }
 .xt-view {
   font-family: 微软雅黑;
@@ -483,3 +542,4 @@ body {
   background-color: #bcc5d4;
   border-radius: 0px 15px 15px 0px;
 }
+/*# sourceMappingURL=userCenter.css.map */

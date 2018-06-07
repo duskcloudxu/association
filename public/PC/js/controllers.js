@@ -537,7 +537,7 @@ angular.module('app.controllers', [])
 
 
     //---------------------------  个人空间（用户 管理员） userCenter  associationManagement ---------------------------
-    .controller('userCenterCtrl', function ($cookieStore, $scope, $state, $http, SystemService) {
+    .controller('userCenterCtrl', function ($cookieStore, $scope, $state, $http, SystemService,UserService) {
       let user = SystemService.getUser();
       if ($cookieStore.get('lastCenterNavStatus')) $scope.navStatus = $cookieStore.get('lastCenterNavStatus');
       console.log(user);
@@ -546,6 +546,14 @@ angular.module('app.controllers', [])
         $state.go('login');
         return;
       }
+      $scope.currentUser = user._id;
+      let p1 = UserService.getLatestInformation($scope.currentUser);
+      p1.then(function (value) {
+        $scope.person = value;
+      });
+      $scope.cur=1//当前目录的位置
+
+
 
     })
     .controller('myprofileCtrl', function ($scope, $timeout, $state, $http, UserService, NewsService, SystemService, ActivityService, $cookieStore) {
