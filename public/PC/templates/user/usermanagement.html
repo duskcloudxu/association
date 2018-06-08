@@ -2,11 +2,13 @@
 
     <div class="association" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()" ng-repeat="i in asso">
         <div class="xt-flex-rightend">
-            <div class="association-name">{{i.name}}</div>
+            <div class="association-name" ng-click="activityManagement(i)">{{i.name}}</div>
             <div class="xt-flex-grow"></div>
-            <div><a class="association-button fa fa-4x fa-arrow-circle-o-right" ng-show="hoverEdit"
-                    ng-click="activityManagement(i)"></a></div>
         </div>
-        <div class="association-fill"></div>
+        <div class="xt-flex-center">
+            <div class="association-imagebox">
+                <img src="image/index.jpg" alt="">
+            </div>
+        </div>
     </div>
 </div>
