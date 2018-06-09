@@ -11,7 +11,7 @@
             <img src="image/index.jpg" class="club-logo">
             <div class="activity-time">{{data.time | myDateTime}}</div>
             <div class="activity-club-name">{{data.associationName}}</div>
-            <img src="image/bookmark.svg" class="bookmark-icon">
+            <img src="image/bookmark.svg" class="bookmark-icon" ng-click="activityInform(data)">
             <!--<span class="glyphicon glyphicon-bookmark" ng-click="activityInform(data)"></span>-->
         </div>
     </div>
