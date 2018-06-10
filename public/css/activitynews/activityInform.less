@@ -1,102 +1,87 @@
-@-webkit-keyframes show {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-//__________________________________________AnimationEffect_____________________________________________
-
 .chy-box {
-    -webkit-animation: 1s show;
-    width: 85%;
-    height: 480px;
-    position: relative;
-    padding: 50px;
+    width: 100%;
+    //height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: auto;
-    margin-top: 3%;
-    background-color: rgba(187, 207, 255, 0.51);
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
-    border-bottom-right-radius: 60px 5px;
-    border-top-right-radius: 60px 5px;
+    padding-top: 50px;
 
-    > p:first-of-type {
-        font-size: 26px;
-        font-weight: bold;
-        color: #ccdeff;
-        font-family: 楷体;
-        text-transform: uppercase;
-        text-shadow: 3px 3px 20px;
-    }
+    .left-information {
+        width: 50%;
+        h1 {
+            padding-left: 10px;
+            padding-top: 20px;
+            font-size: 56px;
+        }
+        .activity-info {
+            position: relative;
+            margin-bottom: 10px;
+            margin-top: 250px;
 
-    div {
-        margin-top: 6px;
-        display: flex;
-        p {
-            margin-left: 5%;
+            .club-logo {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                position: absolute;
+                top: 25px;
+                left: 10px;
+            }
+
+            .activity-time, .activity-club-name, .activity-place {
+                margin-left: 80px;
+            }
+
+            .activity-club-name {
+                padding-top: 25px;
+            }
+
+            .more-icon, .bookmark-icon {
+                float: right;
+                margin-top: -38px;
+                margin-right: 18px;
+            }
         }
     }
 
-    & > div:nth-of-type(2) {
-        width: 80%;
-        height: 250px;
-        word-break: break-all;
+    .right-image {
+        width: 50%;
+        height: 500px;
+        background-image: url(../../image/clubhome_head.jpg);
+        background-position: 50% 50% !important;
     }
-}
 
-.chy-box:before {
-    content: '';
-    width: 100%;
-    z-index: -1;
-    height: 100%;
-    padding: 0 0 1px 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(187, 207, 255, 0.28);
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
-    border-bottom-right-radius: 60px 5px;
-    transform: skew(2deg, 2deg) translate(3px, 8px)
-}
+    .activityInform-content {
+        width: 100%;
+        margin-top: 100px;
+        font-size: 22px;
+        overflow: auto;
+        text-align: center;
+    }
 
-.chy-box:after {
-    content: '';
-    width: 100%;
-    z-index: -1;
-    height: 98%;
-    padding: 0 0 1px 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(187, 207, 255, 0.35);
-    border: 1px solid #ccc;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-    -webkit-transform: skew(2deg, 2deg) translate(-1px, 2px)
-}
+    .btns {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
 
-.btn {
-    float: right;
-    margin-top: -15px;
-    margin-left: 80%;
-    border-radius: 5px;
-    color: #819DF4;
-    border-color: rgba(66, 66, 66, 0.33);
-}
+        .btn {
+            float: right;
+            border-radius: 5px;
+            color: #819DF4;
+            border-color: rgba(66, 66, 66, 0.33);
+        }
 
-.btn:hover {
-    color: #FA8072;
-    border-color: rgba(66, 66, 66, 0.33);
-    background-color: #F8F8FF;
-}
+        .chy-enter {
+            margin-right: 10px;
+        }
 
-.activityInform-content {
-    overflow: auto;
-}
+        .btn:hover {
+            color: #FA8072;
+            border-color: rgba(66, 66, 66, 0.33);
+            background-color: #F8F8FF;
+        }
+    }
 
-.chy-enter {
-    margin-top: -50px;
 }

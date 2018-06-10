@@ -10,7 +10,7 @@
             <img src="image/index.jpg" class="club-logo">
             <p class="dynamics-time">{{data.time | myDateTime}}</p>
             <p class="association-name">{{data.association.name}}</p>
-            <img src="image/bookmark.svg" class="bookmark-icon">
+            <img src="image/bookmark.svg" class="bookmark-icon" ng-click="newsInform(data)">
             <!--<span class="glyphicon glyphicon-bookmark" ng-click="newsInform(data)"></span>-->
         </div>
     </div>
