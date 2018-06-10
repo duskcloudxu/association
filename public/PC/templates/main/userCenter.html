@@ -1,10 +1,25 @@
 <link rel="stylesheet" href="./css/main/userCenter.css">
 <div ng-app="ngAnimate">
-<div class="xt-nav">
-    <a ui-sref=".myprofile" class="xt-bgdcolor-black" ng-click="navStatus='xt-navbar-black';record()" id="first_button">个人主页</a>
-    <a ui-sref=".myAssAndAct" class="xt-bgdcolor-blue" ng-click="navStatus='xt-navbar-blue';record()" >社团动态</a>
-    <a ui-sref=".mymanagement" class="xt-bgdcolor-yellow"  ng-click="navStatus='xt-navbar-yellow';record()">社团管理</a>
-</div>
-<div class="xt-navbar" ng-class="navStatus"></div>
-<div class="xt-view" ui-view ></div>
+    <div class="xt-selfintro">
+        <img ng-src="{{person.headimage}}" alt="个人头像" class="avatar">
+        <div class="name">{{person.name}}</div>
+        <div class="slogan">why so serious? why so serious?why so serious? why so serious? why so serious? why so
+            serious? why so serious? why so serious? why so serious? why so serious? why so serious? why so serious?
+        </div>
+
+        <div class="detail">性别: {{person.sex=="m"?"male":"female"}} &nbsp;&nbsp;学号: {{person.studentID}}</div>
+        <div class="editbutton xt-flex-center ">
+           <div >编辑</div>
+        </div>
+    </div>
+    <div class="xt-nav">
+        <div class="nav-linkcontainer">
+            <a ui-sref=".myprofile" class="first" ng-click="cur=1">个人主页</a>
+            <a ui-sref=".myAssAndAct" class="second" ng-click="cur=2">社团动态</a>
+            <a ui-sref=".mymanagement" class="third" ng-click="cur=3">社团管理</a>
+            <hr ng-class="{hrFirst:cur==1,hrSecond:cur==2,hrThird:cur==3}"/>
+        </div>
+    </div>
+    <!--<div class="xt-navbar" ng-class="navStatus"></div>-->
+    <div class="xt-view" ui-view></div>
 </div>

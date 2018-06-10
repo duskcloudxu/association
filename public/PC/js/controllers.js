@@ -537,7 +537,7 @@ angular.module('app.controllers', [])
 
 
     //---------------------------  个人空间（用户 管理员） userCenter  associationManagement ---------------------------
-    .controller('userCenterCtrl', function ($cookieStore, $scope, $state, $http, SystemService) {
+    .controller('userCenterCtrl', function ($cookieStore, $scope, $state, $http, SystemService,UserService) {
       let user = SystemService.getUser();
       if ($cookieStore.get('lastCenterNavStatus')) $scope.navStatus = $cookieStore.get('lastCenterNavStatus');
       console.log(user);
@@ -546,6 +546,14 @@ angular.module('app.controllers', [])
         $state.go('login');
         return;
       }
+      $scope.currentUser = user._id;
+      let p1 = UserService.getLatestInformation($scope.currentUser);
+      p1.then(function (value) {
+        $scope.person = value;
+      });
+      $scope.cur=1//当前目录的位置
+
+
 
     })
     .controller('myprofileCtrl', function ($scope, $timeout, $state, $http, UserService, NewsService, SystemService, ActivityService, $cookieStore) {
@@ -570,6 +578,7 @@ angular.module('app.controllers', [])
         let v3 = value[2];
         $scope.person = v1;
         // console.log($scope.person);
+        console.log(v1,v2,v3);
         for (let i in v1.associations) {
           for (let j in v2) {
             if (v1.associations[i] === v2[j].associationId) {
@@ -591,12 +600,17 @@ angular.module('app.controllers', [])
           $scope.res.push($scope.data[i]);
         }
         $scope.$apply();
-        // console.log($scope.res);
+        console.log($scope.res);
 
       });
       $scope.showDate = function (date) {
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"
+        ];
         let temp = new Date(date);
-        return temp.toDateString();
+        let cur= Date.now();
+        let diffDays = Math.ceil((cur-temp) / (1000 * 3600 * 24));
+        return temp.getDay()+" "+monthNames[temp.getMonth()] +" · " +diffDays +"days";
       };
       $scope.view = function (target) {
         if (target.type === "活动") {
