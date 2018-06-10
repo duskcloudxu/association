@@ -1,73 +1,56 @@
-@-webkit-keyframes show {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .chy-box {
-  -webkit-animation: 1s show;
-  width: 85%;
-  height: 480px;
-  position: relative;
-  padding: 50px;
-  margin: auto;
-  margin-top: 3%;
-  background-color: rgba(187, 207, 255, 0.51);
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
-  border-bottom-right-radius: 60px 5px;
-  border-top-right-radius: 60px 5px;
-}
-.chy-box > p:first-of-type {
-  font-size: 26px;
-  font-weight: bold;
-  color: #ccdeff;
-  font-family: 楷体;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 20px;
-}
-.chy-box div {
-  margin-top: 6px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 50px;
 }
-.chy-box div p {
-  margin-left: 5%;
+.chy-box .left-information {
+  width: 50%;
 }
-.chy-box > div:nth-of-type(2) {
-  width: 80%;
-  height: 250px;
-  word-break: break-all;
+.chy-box .left-information h1 {
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: 56px;
 }
-.chy-box:before {
-  content: '';
-  width: 100%;
-  z-index: -1;
-  height: 100%;
-  padding: 0 0 1px 0;
+.chy-box .left-information .activity-info {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 250px;
+}
+.chy-box .left-information .activity-info .club-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(187, 207, 255, 0.28);
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
-  border-bottom-right-radius: 60px 5px;
-  transform: skew(2deg, 2deg) translate(3px, 8px);
+  top: 25px;
+  left: 10px;
 }
-.chy-box:after {
-  content: '';
+.chy-box .left-information .activity-info .activity-time,
+.chy-box .left-information .activity-info .activity-club-name,
+.chy-box .left-information .activity-info .activity-place {
+  margin-left: 80px;
+}
+.chy-box .left-information .activity-info .activity-club-name {
+  padding-top: 25px;
+}
+.chy-box .left-information .activity-info .more-icon,
+.chy-box .left-information .activity-info .bookmark-icon {
+  float: right;
+  margin-top: -38px;
+  margin-right: 18px;
+}
+.chy-box .right-image {
+  width: 50%;
+  height: 500px;
+  background-image: url(../../image/clubhome_head.jpg);
+  background-position: 50% 50% !important;
+}
+.chy-box .activityInform-content {
   width: 100%;
-  z-index: -1;
-  height: 98%;
-  padding: 0 0 1px 0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(187, 207, 255, 0.35);
-  border: 1px solid #ccc;
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  -webkit-transform: skew(2deg, 2deg) translate(-1px, 2px);
+  margin-top: 10px;
+  font-size: 22px;
 }
 .btn {
   float: right;

@@ -1,12 +1,17 @@
 <link rel="stylesheet" href="./css/activitynews/activityInform.css">
 
 <div class="chy-box">
-    <p>活动名称:{{activity.title}}</p>
-    <div>
-        <p>{{activity.associationName}}</p>
-        <p>{{activity.time | myDateTime}}</p>
-        <p>{{activity.place}}</p>
+    <div class="left-information">
+        <h1>{{activity.title}}</h1>
+        <div class="activity-info">
+            <!--todo 为了展示效果写死的图片 实际应显示所属社团的logo-->
+            <img src="image/index.jpg" class="club-logo">
+            <div class="activity-club-name">{{activity.associationName}}</div>
+            <div class="activity-time">{{activity.time | myDateTime}}</div>
+            <p class="activity-place">{{activity.place}}</p>
+        </div>
     </div>
+    <div class="right-image"></div>
     <div class="activityInform-content" ng-bind-html="activity.content | to_trusted"></div>
 </div>
 <button type="button" class="btn btn-default chy-enter" ng-click="enter()">报名</button>
