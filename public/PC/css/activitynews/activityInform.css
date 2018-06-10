@@ -49,25 +49,29 @@
 }
 .chy-box .activityInform-content {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 100px;
   font-size: 22px;
+  overflow: auto;
+  text-align: center;
 }
-.btn {
+.chy-box .btns {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.chy-box .btns .btn {
   float: right;
-  margin-top: -15px;
-  margin-left: 80%;
   border-radius: 5px;
   color: #819DF4;
   border-color: rgba(66, 66, 66, 0.33);
 }
-.btn:hover {
+.chy-box .btns .chy-enter {
+  margin-right: 10px;
+}
+.chy-box .btns .btn:hover {
   color: #FA8072;
   border-color: rgba(66, 66, 66, 0.33);
   background-color: #F8F8FF;
-}
-.activityInform-content {
-  overflow: auto;
-}
-.chy-enter {
-  margin-top: -50px;
 }
