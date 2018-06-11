@@ -302,7 +302,7 @@ angular.module('app.controllers', [])
     .controller('dynamicsCtrl', function ($scope, $state, $http, $timeout, $cookieStore, NewsService) {
       let lastState = $cookieStore.get('currentState');
       $cookieStore.put('lastState', lastState);
-      $cookieStore.put('currentState', 'home.dynamics');
+      $cookieStore.put('currentState', 'dynamics');
 
       // $http.get('../testdata/dynamics.json')
       //     .then(function (resdata) {
@@ -334,7 +334,7 @@ angular.module('app.controllers', [])
     .controller('activityCtrl', function ($scope, $state, $http, $timeout, $cookieStore, ActivityService) {
       let lastState = $cookieStore.get('currentState');
       $cookieStore.put('lastState', lastState);
-      $cookieStore.put('currentState', 'home.activity');
+      $cookieStore.put('currentState', 'activity');
 
       const promise = ActivityService.showAllActivity();
       promise.then(function (data) {
@@ -363,7 +363,7 @@ angular.module('app.controllers', [])
     .controller('introductionCtrl', function ($scope, $state, $http, $timeout, $cookieStore, AssociationService) {
       let lastState = $cookieStore.get('currentState');
       $cookieStore.put('lastState', lastState);
-      $cookieStore.put('currentState', 'home.introduction');
+      $cookieStore.put('currentState', 'introduction');
 
       const promise = AssociationService.showAllAssociation();
       promise.then(function (data) {
@@ -442,7 +442,7 @@ angular.module('app.controllers', [])
 
         promise.then(function (data) {
           swal('成功!', '注册成功', 'success');
-          $state.go('home.activity');
+          $state.go('activity');
         }, function (data) {
           swal('出错了!', '注册失败' + data, 'error');
         }).catch(function (err) {
@@ -475,7 +475,7 @@ angular.module('app.controllers', [])
           if (lastState) {
             $state.go(lastState);
           } else {
-            $state.go('home.activity');
+            $state.go('activity');
           }
         }, function (data) {
           console.log(data);
@@ -490,7 +490,7 @@ angular.module('app.controllers', [])
         let user = $scope.user;
         UserService.logout();
         swal('成功!', '已登出' + user.name, 'success');
-        $state.go('home.activity');
+        $state.go('activity');
       };
 
       $scope.resetPwd = function () {
@@ -531,7 +531,7 @@ angular.module('app.controllers', [])
         // let user = $scope.user;
         // UserService.logout();
         // swal('成功!', '已登出' + user.name, 'success');
-        // $state.go('home.activity');
+        // $state.go('activity');
       };
     })
 
@@ -1528,7 +1528,7 @@ angular.module('app.controllers', [])
       console.log($scope.activity);
       if (!$scope.activity) {
         swal('数据错误!', '请重试!', 'error');
-        $state.go('home.activity');
+        $state.go('activity');
       }
       $scope.enter = function () {
         let user = SystemService.getUser();

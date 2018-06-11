@@ -1,67 +1,76 @@
-@-webkit-keyframes show {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-//__________________________________________AnimationEffect_____________________________________________
-
 .chy-box {
-    -webkit-animation: 1s show;
-    position: relative;
-    width: 85%;
-    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: auto;
-    margin-top: 3%;
-    background-color: rgba(187, 207, 255, 0.51);
-    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1) inset;
-    border-bottom-right-radius: 6px 50px;
-    border-top-right-radius: 6px 50px;
+    padding-top: 50px;
 
-    > p:first-of-type {
-        font-size: 26px;
-        font-weight: bold;
-        padding-top: 5%;
-        margin-left: 8%;
-        color: #ccdeff;
-        font-family: 楷体;
-        text-shadow: 3px 3px 20px;
-    }
+    .left-information {
+        width: 50%;
+        h1 {
+            padding-left: 10px;
+            padding-top: 20px;
+            font-size: 56px;
+        }
+        .news-info {
+            position: relative;
+            margin-bottom: 10px;
+            margin-top: 250px;
 
-    .newsInform-tips {
-        margin-top: 10px;
-        margin-left: 8%;
-        display: flex;
-        p {
-            margin-left: 5%;
+            .club-logo {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                position: absolute;
+                top: 25px;
+                left: 10px;
+            }
+
+            .news-time, .news-club-name, .news-place {
+                margin-left: 80px;
+            }
+
+            .news-club-name {
+                padding-top: 35px;
+            }
         }
     }
 
+    .right-image {
+        width: 50%;
+        height: 500px;
+        background-image: url(../../image/clubhome_head.jpg);
+        background-position: 50% 50% !important;
+    }
+
     .newsInform-content {
+        max-width: 700px;
+        width: 100%;
         margin: auto;
-        margin-top: 5%;
-        width: 80%;
-        height: 250px;
-        word-break: break-all;
-        color: #d8fffc;
+        margin-top: 100px;
+        font-size: 22px;
         overflow: auto;
     }
-}
 
-.btn {
-    float: right;
-    margin-top: -3%;
-    margin-left: 80%;
-    border-radius: 5px;
-    color: #819DF4;
-    border-color: rgba(66, 66, 66, 0.33);
-}
+    .btns {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
 
-.btn:hover {
-    color: #FA8072;
-    border-color: rgba(66, 66, 66, 0.33);
-    background-color: #F8F8FF;
+        .btn {
+            float: right;
+            border-radius: 5px;
+            color: #819DF4;
+            border-color: rgba(66, 66, 66, 0.33);
+        }
+
+        .btn:hover {
+            color: #FA8072;
+            border-color: rgba(66, 66, 66, 0.33);
+            background-color: #F8F8FF;
+        }
+    }
 }
