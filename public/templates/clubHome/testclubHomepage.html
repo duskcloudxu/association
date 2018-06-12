@@ -6,11 +6,12 @@
             <div class="xt-flex-rightend clubhome-clubTitle-intro">{{club.introduction}}</div>
         </div>
         <img src="./image/clubhome_head.jpg" alt="">
-        <div class="xt-clubhome-clubNav xt-flex">
-            <div class="clubhome-clubNav-btn xt-flex-center" ui-sref="testclubHomepage.homepage">主页</div>
-            <div class="clubhome-clubNav-btn  xt-flex-center" ui-sref="testclubHomepage.datapage">资料</div>
-            <div class="xt-flex-grow"></div>
-            <div class="clubhome-clubNav-btn xt-flex-center" ng-click="back()">返回</div>
+        <div class="xt-nav">
+            <div class="nav-linkcontainer">
+                <a ui-sref="testclubHomepage.homepage" class="first" ng-click="cur=1">个人主页</a>
+                <a ui-sref="testclubHomepage.datapage" class="second" ng-click="cur=2">社团动态</a>
+                <hr ng-class="{hrFirst:cur==1,hrSecond:cur==2}"/>
+            </div>
         </div>
         <div ui-view=""></div>
     </div>

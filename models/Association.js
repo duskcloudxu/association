@@ -7,6 +7,7 @@ const AssociationSchema = new base.Schema({
     members:[ObjectId],    //普通社员
     logoimage: String,     //logo
     introduction: String,  //社团介绍
+    imgSrc: String,        //封面图片的img标签的src
     application:[
         {
             statement:String,

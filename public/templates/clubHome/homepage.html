@@ -5,21 +5,29 @@
                  ng-repeat="i in data|orderBy:'time':true">
                 <div class="row">
                     <div class="  xt-flex message-headline">
-                        <div class="message-headline-title">{{i.title}}</div>
-                        <div class="xt-flex-grow"></div>
-                        <div class="message-headline-time">{{showDate(i.time)}}</div>
-                        <div class="message-headline-time" ng-if="i.type==='活动'">{{i.place}}</div>
-                        <div class="message-headline-type">{{i.type}}</div>
-                    </div>
-
-                    <div class="col-xs-12 xt-flex message-content">
-                        <div class="xt-text contentbox" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()"
-                             ng-bind-html="i.content | to_trusted"></div>
+                        <img class="message-headline-logo" ng-src="{{i.association.logoimage}}"/>
+                        <div class="detailContainer">
+                            <div class="message-headline-association">{{i.association.name}}</div>
+                            <div class="message-headline-time">{{showDate(i.time)}}</div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="message-viewAll" ng-show="hoverEdit" ng-click="view(i)">
-                        <span class="fa fa-book"></span>
+                <div class="message-content">
+                    <div class="xt-flex-center">
+                        <div class="message-content-imagebox">
+                            <img src="image/index.jpg" class=""/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="xt-text contentbox">
+                            <div class="title">
+                                {{i.title}}
+                            </div>
+                            <div class="content">
+                                {{i.content}}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -30,6 +38,8 @@
         <div class="img_container">
             <img ng-src="{{club.logoimage}}" alt="">
         </div>
-        <div class="applicationBtn xt-flex-center" ng-click="application()">申请入社</div>
+        <div class="row xt-flex-center">
+            <div class=" btn btn-success xt-flex-center" ng-click="application()">申请入社</div>
+        </div>
     </div>
 </div>
