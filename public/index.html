@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <!-- apply our angular app to our site -->
-<body ng-app="app">
+<body ng-app="app" ng-controller="appCtrl">
 <audio src="music/Viva-La-Vida.mp3" loop></audio>
 <!-- navigation -->
 <!--加上navbar-fixed-top顶栏浮动-->
@@ -52,11 +52,15 @@
         </button>
         <div class="navbar-brand"><a class="fkq-header-title" href="" target="_blank">AIMS</a></div>
     </div>
-    <div class="login-and-register">
+    <div class="login-and-register" ng-if="!isLogin">
         <a ui-sref="login">登录</a>
         <!--<a ui-sref="register">注册</a>-->
     </div>
-            <!--<a ui-sref="userCenter.myprofile" ng-click="ClearCenterNav()">用户</a>-->
+    <div class="user-image" ng-if="isLogin">
+        <img ng-src="{{headimage}}" alt="个人头像" class="avatar" ui-sref="login">
+    </div>
+
+    <!--<a ui-sref="userCenter.myprofile" ng-click="ClearCenterNav()">用户</a>-->
             <!--<a ui-sref="about">关于</a>-->
 
 </nav>

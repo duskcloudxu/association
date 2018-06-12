@@ -16,6 +16,19 @@ angular.module('app', [
     .constant('activityip', 'http://localhost:3000/')  // redis 和 kue 单机地址
     // .constant('activityip', 'http://192.168.1.173:3000/')  // redis 和 kue 单机地址
 
+    .controller('appCtrl', function ($scope, $rootScope, $cookieStore, SystemService, UserService) {
+        $rootScope.isLogin = false;
+        let user = SystemService.getUser();
+        console.log(user);
+        if (user) {
+            $rootScope.isLogin = true;
+            UserService.getLatestInformation(user._id)
+                .then(function (value) {
+                    $rootScope.headimage = value.headimage;
+                });
+        }
+    })
+
     .filter('to_trusted', ['$sce', function ($sce) {
         return function (text) {
             return $sce.trustAsHtml(text);
