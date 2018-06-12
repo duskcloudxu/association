@@ -27,6 +27,14 @@ angular.module('app', [
                     $rootScope.headimage = value.headimage;
                 });
         }
+      $scope.logout = function () {
+        // console.log($scope.user);
+        let user = $scope.user;
+        UserService.logout();
+        $rootScope.isLogin = false;
+        swal('成功!', '已登出' + user.name, 'success');
+        $state.go('activity');
+      };
     })
 
     .filter('to_trusted', ['$sce', function ($sce) {

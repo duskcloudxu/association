@@ -100,9 +100,14 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a ui-sref="login" ng-if="!isLogin">登录</a></li>
                 <li>
-                    <a ui-sref="login" ng-if="isLogin" class="avatar-a">
+                    <a  type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-if="isLogin" class="avatar-a">
                         <img ng-src="{{headimage}}" alt="avatar" class="avatar-image img-circle">
+
                     </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a ui-sref="userCenter.myprofile">我的空间</a></li>
+                        <li><a ui-sref="login">登出</a></li>
+                    </ul>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->

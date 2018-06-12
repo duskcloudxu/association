@@ -5,30 +5,16 @@
             <span ng-click="addFile()" class="fa fa-plus fa-2x"></span>
         </div>
     </div>
-    <div class="messagebox">
-        <div class="row message" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()"
-             ng-repeat="i in data | orderBy:'time':true">
-            <div class="row message-headline">
-                <div class="activityInf-top xt-flex">
-                    <div class=" message-headline-title">{{i.title}}</div>
-                    <div class="xt-flex-grow"></div>
-                    <div class="message-headline-time">{{dateArray[$index]}}</div>
-                </div>
+    <div class="xt-downloadBox xt-flex">
+        <div class="xt-download xt-flex" ng-repeat="i in data|orderBy:'time':true">
+            <div class=" xt-title xt-flex">
+                <div class="xt-flex-grow"></div>
+                {{i.title}}
             </div>
-            <div class="row">
-                <div class="col-xs-12 activityInf-content message-content">
-                    <div class="xt-text">&nbsp;&nbsp;{{i.content}}</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="message-download " ng-show="hoverEdit" ng-click="download(i)">
-                    <span class="fa fa-download"></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="message-delete" ng-show="hoverEdit" ng-click="delFile(i._id)">
-                    <span class="fa fa-trash"></span>
-                </div>
+            <div class=" xt-type xt-flex">文本</div>
+            <div class=" xt-des xt-flex">{{i.content}}</div>
+            <div class=" xt-down xt-flex">
+                <span class="fa fa-download"></span>
             </div>
         </div>
     </div>

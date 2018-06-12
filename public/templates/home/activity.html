@@ -1,11 +1,13 @@
 <link rel="stylesheet" href="./css/home/activity.css">
 <div class="chy-box">
     <div ng-repeat="data in data2" class="chy-item">
-        <div class="poster"></div>
+        <div class="poster">
+            <img ng-src="{{data.imgSrc}}" alt="">
+        </div>
         <h3>{{data.title}}</h3>
         <div class="chy-content">
             <!--todo 为了展示效果写死的图片 实际应显示所属社团的logo-->
-            <img src="image/index.jpg" class="club-logo">
+            <img ng-src="{{data.association.logoimage}}" class="club-logo">
             <div class="activity-club-name">{{data.associationName}}</div>
             <div class="activity-time">{{data.time | myDateTime}}</div>
             <div class="more-icon"><i class="fas fa-angle-double-right fa-lg" ng-click="activityInform(data)"></i></div>

@@ -38,8 +38,11 @@
 .chy-box .right-image {
   width: 50%;
   height: 500px;
-  background-image: url(../../image/clubhome_head.jpg);
   background-position: 50% 50% !important;
+}
+.chy-box .right-image img {
+  height: 100%;
+  width: 100%;
 }
 .chy-box .activityInform-content {
   max-width: 700px;
@@ -71,3 +74,4 @@
   border-color: rgba(66, 66, 66, 0.33);
   background-color: #F8F8FF;
 }
+/*# sourceMappingURL=activityInform.css.map */

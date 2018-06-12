@@ -5,20 +5,20 @@
             <span ng-click="add()" class="fa fa-plus fa-2x"></span>
         </div>
     </div>
-    <div class="row" ng-repeat="i in data | orderBy:'time':true" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+    <div class="row" ng-repeat="i in data | orderBy:'time':true" >
         <div class="col-xs-12 xt-flex-center xt-showboard-item">
             <div class="col-xs-9 xt-flex">
                 <div class="showboard-item-content xt-flex-center xt-flex-zero xt-flex-col4">{{i.title}}</div>
                 <div class="showboard-item-content xt-flex-center xt-flex-zero xt-flex-col4">{{showDate(i.time)}}</div>
             </div>
-            <div class="col-xs-3 xt-flex-center">
-                <a ng-click="newsInform(i)" ng-show="hoverEdit" class="showboard-item-btn xt-flex-center">
+            <div class="col-xs-4 xt-flex-center">
+                <a ng-click="newsInform(i)"  class="showboard-item-btn xt-flex-center">
                     <span class="fa fa-eye"></span>
                 </a>
-                <a ng-click="newsEdit(i)" ng-show="hoverEdit" class="showboard-item-btn xt-flex-center">
+                <a ng-click="newsEdit(i)"  class="showboard-item-btn xt-flex-center">
                     <span class="fa fa-edit"></span>
                 </a>
-                <a class="showboard-item-btn xt-flex-center" ng-show="hoverEdit" ng-click="delNews(i._id)">
+                <a class="showboard-item-btn xt-flex-center"  ng-click="delNews(i._id)">
                     <span class="fa fa-trash"></span>
                 </a>
             </div>

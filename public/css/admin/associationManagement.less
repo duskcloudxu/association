@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url("../../image/userCenter.jpg") !important;
+    //background-image: url("../../image/userCenter.jpg") !important;
     height: 100%;
     background-size: 100%;
     background-attachment: fixed;
@@ -425,7 +425,6 @@ body {
 
 //__________________________________________添加按钮__________________________________
 .association {
-    background-color: rgba(232, 225, 245, 0.8);
     border-radius: 10%;
     width: 100%;
     margin: 10px;
@@ -450,17 +449,16 @@ body {
 .xt-currentAssociation {
     max-width: 300px;
     text-align: center;
-    margin: 10px;
+    margin: 30px;
     height: 50px;
-    border: solid 2px white;
-    color: white;
+    border: solid 2px;
+    border-image: linear-gradient(to right, white, grey, white) 30 30;
+
+    color: black;
     font-size: 30px;
     border-radius: 10px;
 }
 
-.xt-currentAssociation:hover {
-    -webkit-animation: 1s swing;
-}
 
 .xt-showboard {
     height: 100%;
@@ -468,23 +466,25 @@ body {
         transition: all 1s linear;
         -webkit-animation: 0.5s show;
         width: 99%;
-        background-color: rgba(255, 255, 255, 0.56);
         padding-left: 20px;
         padding-right: 20px;
         height: 40px;
         border-radius: 20px;
         margin: 8px;
+        border-image: linear-gradient(to right, white, grey, white) 30 30;
+        border-top: solid 2px;
+        border-bottom: solid 2px;
         a {
             text-decoration: none;
         }
         .showboard-item-content {
-            border-right: dashed 2px black;
+            //border-right: solid 2px black;
         }
         .showboard-item-btn {
             -webkit-transition: all linear 0.3s;
             transition: all linear 0.3s;
-            border-radius: 50%;
             height: 30px;
+
             cursor: pointer;
             width: 30px;
             margin-right: 10px;
@@ -522,7 +522,6 @@ body {
 }
 
 .xt-box {
-    margin-top: 20px;
     position: relative;
     min-height: 700px;
     .xt-box-buttonContainer {
@@ -563,7 +562,6 @@ body {
         border-bottom-left-radius: 5px;
     }
     .xt-box-view {
-        background-color: rgba(158, 158, 158, 0.6);
         min-height: 700px;
         border-radius: 0px 5px 5px 5px;
         .container {
@@ -578,5 +576,117 @@ body {
         .view-data-container {
             padding: 20px;
         }
+    }
+}
+
+.xt-nav {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-bottom: #e5e5e5 solid 1px;
+    .nav-linkcontainer {
+        position: relative;
+        display: flex;
+        width: 50%;
+        a {
+            display: flex;
+            justify-content: center;
+            width: 25%;
+            align-items: center;
+            height: 30px;
+            color: #9E9E9E;
+            margin-left: -1px;
+            font-family: 微软雅黑;
+            padding: 5px;
+        }
+        a:hover {
+            opacity: 1;
+            transition: all 1s;
+            text-decoration: none;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        .first:hover ~ hr { //简单解释一下：这个能在绑定元素被hover的时候选中其他元素进行修改。
+            margin-left: 0%;
+        }
+        .second:hover ~ hr {
+            margin-left: 25%;
+        }
+        .third:hover ~ hr {
+            margin-left: 50%;
+        }
+        .fourth:hover ~ hr {
+            margin-left: 75%;
+        }
+        hr {
+            position: absolute;
+            left: 0px;
+            bottom: -1px;
+            height: 1px;
+            width: 25%;
+            margin: 0;
+            background: #696969;
+            border: none;
+            transition: .3s ease-in-out;
+        }
+        .hrFirst { //在ngClass里用来确定当前值
+            margin-left: 0%;
+        }
+        .hrSecond {
+            margin-left: 25%;
+        }
+        .hrThird {
+            margin-left: 50%;
+        }
+
+        .hrFourth {
+            margin-left: 75%;
+        }
+    }
+}
+
+.xt-downloadBox {
+    transition: all 1s linear;
+    -webkit-animation: 0.5s show;
+    width: 100%;
+    flex-direction: column;
+    @borderColor: -webkit-linear-gradient(to right, white, grey, white);
+    .xt-download {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        border-image: linear-gradient(to right, white, grey, white) 30 30;
+        border-top: solid 2px;
+        border-bottom: solid 2px;
+
+    }
+    .xt-title {
+        flex-basis: 0;
+        flex-grow: 2;
+        justify-content: flex-end;
+    }
+    .xt-type {
+        flex-grow: 1;
+        flex-basis: 0;
+
+        justify-content: center;
+    }
+    .xt-des {
+        flex-grow: 4;
+        flex-basis: 0;
+
+    }
+    .xt-down {
+        flex-grow: 1;
+        flex-basis: 0;
+
+        justify-content: center;
+    }
+    .fa:hover {
+        cursor: pointer;
     }
 }

@@ -4,12 +4,14 @@
         <h1>{{news.title}}</h1>
         <div class="news-info">
             <!--todo 为了展示效果写死的图片 实际应显示所属社团的logo-->
-            <img src="image/index.jpg" class="club-logo">
+            <img ng-src="{{news.association.logoimage}}" class="club-logo">
             <div class="news-club-name">{{news.association.name}}</div>
             <div class="news-time">{{news.time | myDateTime}}</div>
         </div>
     </div>
-    <div class="right-image"></div>
+    <div class="right-image">
+        <img ng-src="{{activity.imgSrc}}" alt="">
+    </div>
     <div class="newsInform-content" ng-bind-html="news.content | to_trusted"></div>
     <div class="btns">
         <button type="button" class="btn btn-default" ng-click="back()">返回</button>

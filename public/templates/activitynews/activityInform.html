@@ -5,13 +5,15 @@
         <h1>{{activity.title}}</h1>
         <div class="activity-info">
             <!--todo 为了展示效果写死的图片 实际应显示所属社团的logo-->
-            <img src="image/index.jpg" class="club-logo">
+            <img ng-src="{{activity.association.logoimage}}" class="club-logo">
             <div class="activity-club-name">{{activity.associationName}}</div>
             <div class="activity-time">{{activity.time | myDateTime}}</div>
             <p class="activity-place">{{activity.place}}</p>
         </div>
     </div>
-    <div class="right-image"></div>
+    <div class="right-image">
+        <img ng-src="{{activity.imgSrc}}" alt="">
+    </div>
     <div class="activityInform-content" ng-bind-html="activity.content | to_trusted"></div>
     <div class="btns">
         <button type="button" class="btn btn-default chy-enter" ng-click="enter()">报名</button>

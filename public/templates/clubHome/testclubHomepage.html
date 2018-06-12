@@ -5,7 +5,7 @@
             <div class="clubhome-clubTitle-name">{{club.name}}</div>
             <div class="xt-flex-rightend clubhome-clubTitle-intro">{{club.introduction}}</div>
         </div>
-        <img src="./image/clubhome_head.jpg" alt="">
+        <img ng-src="{{club.imgSrc}}" alt="" class="bigImage">
         <div class="xt-nav">
             <div class="nav-linkcontainer">
                 <a ui-sref="testclubHomepage.homepage" class="first" ng-click="cur=1">社团主页</a>

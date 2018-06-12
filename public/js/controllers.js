@@ -876,7 +876,8 @@ angular.module('app.controllers', [])
     })
     //________________________________社团管理________________________________________
     .controller('associationManagementCtrl', function ($scope, $state, $http, SystemService, $cookieStore) {
-        let user = SystemService.getUser();
+      $scope.cur = 1//当前目录的位置
+      let user = SystemService.getUser();
         let lastState = $cookieStore.get('currentState');
         $cookieStore.put('lastState', lastState);
         $cookieStore.put('currentState', 'associationManagement.dataManagement');
