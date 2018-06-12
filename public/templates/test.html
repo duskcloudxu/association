@@ -7,11 +7,9 @@
     <form name="myForm">
         <!--
         富文本编辑器
-        使用方法：
-        class="ueditor"就好了
         ng-model绑定变量后会把html整个记录下了，要用了渲染下就好了
         -->
-        <textarea class="ueditor" ng-model="text.content" style="height: 270px;"></textarea>
+        <div class="editable" ng-model="text.content" style="height: 270px;"></div>
     </form>
     <p id="raw">
         {{text.content}}

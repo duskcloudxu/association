@@ -5,7 +5,7 @@
 .chy-box > div:first-child {
   margin-top: 4%;
 }
-.chy-box > div:first-child p {
+.chy-box > div:first-child > p {
   margin-left: 2%;
   color: #ffffff;
   font-size: 20px;

@@ -1587,6 +1587,8 @@ angular.module('app.controllers', [])
         $cookieStore.put('lastState', lastState);
         $cookieStore.put('currentState', 'activityEdit');
 
+        const editor = new MediumEditor('.MediumEditor');
+
         // $scope.activity = $cookieStore.get('currentActivity');
         $scope.activity = JSON.parse(sessionStorage.getItem('currentActivity'));
         $scope.activity.time = $scope.activity.time && new Date($scope.activity.time);
@@ -1640,6 +1642,8 @@ angular.module('app.controllers', [])
         let lastState = $cookieStore.get('currentState');
         $cookieStore.put('lastState', lastState);
         $cookieStore.put('currentState', 'newsEdit');
+
+        const editor = new MediumEditor('.MediumEditor');
 
         // $scope.news = $cookieStore.get('currentNews');
         $scope.news = JSON.parse(sessionStorage.getItem('currentNews'));
