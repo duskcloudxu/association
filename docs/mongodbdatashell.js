@@ -551,6 +551,7 @@ db.association.insert(
     {
         "_id": ObjectId("5926b1be5abc0621e218cceb"),
         "name": "魔方社",
+        "imgSrc": "/web/file/showImg?location=associationimg&name=mf.jpg",
         "proprieterId": ObjectId("5926b1be5abc0621e218cce4"),
         "admins": [
             ObjectId("5926b1be5abc0621e218cce4"),
@@ -608,6 +609,7 @@ db.association.insert(
     {
         "_id": ObjectId("5926b1be5abc0621e218ccec"),
         "name": "桌游社",
+        "imgSrc": "/web/file/showImg?location=associationimg&name=zy.jpg",
         "proprieterId": ObjectId("5926b1be5abc0621e218cce5"),
         "admins": [
             ObjectId("5926b1be5abc0621e218cce5")
@@ -670,6 +672,7 @@ db.association.insert(
     {
         "_id": ObjectId("5926b1be5abc0621e218cced"),
         "name": "PS社",
+        "imgSrc": "/web/file/showImg?location=associationimg&name=ps.jpg",
         "proprieterId": ObjectId("5926b1be5abc0621e218cce6"),
         "admins": [
             ObjectId("5926b1be5abc0621e218cce6"),
@@ -711,6 +714,7 @@ db.association.insert(
     {
         "_id": ObjectId("5926b1be5abc0621e218ccee"),
         "name": "AE社",
+        "imgSrc": "/web/file/showImg?location=associationimg&name=ae.jpg",
         "proprieterId": ObjectId("5926b1be5abc0621e218cce7"),
         "admins": [
             ObjectId("5926b1be5abc0621e218cce7"),
@@ -754,6 +758,7 @@ db.association.insert(
     {
         "_id": ObjectId("5926b1be5abc0621e218ccef"),
         "name": "读书社",
+        "imgSrc": "/web/file/showImg?location=associationimg&name=ds.jpg",
         "proprieterId": ObjectId("5926b1be5abc0621e218cce8"),
         "admins": [
             ObjectId("5926b1be5abc0621e218cce8"),
@@ -850,6 +855,7 @@ db.activity.insert(
         "place": "恕园9-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccee"),
         "associationName": "AE社",
+        "imgSrc": "/web/file/showImg?location=activityimg/AE&name=1.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -863,6 +869,7 @@ db.activity.insert(
         "place": "恕园10-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccee"),
         "associationName": "AE社",
+        "imgSrc": "/web/file/showImg?location=activityimg/AE&name=2.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -876,6 +883,7 @@ db.activity.insert(
         "place": "恕园11-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccee"),
         "associationName": "AE社",
+        "imgSrc": "/web/file/showImg?location=activityimg/AE&name=3.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -889,6 +897,7 @@ db.activity.insert(
         "place": "恕园12-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccee"),
         "associationName": "AE社",
+        "imgSrc": "/web/file/showImg?location=activityimg/AE&name=4.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -902,6 +911,7 @@ db.activity.insert(
         "place": "恕园13-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccee"),
         "associationName": "AE社",
+        "imgSrc": "/web/file/showImg?location=activityimg/AE&name=5.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -915,6 +925,7 @@ db.activity.insert(
         "place": "恕园9-101",
         "associationId": ObjectId("5926b1be5abc0621e218cceb"),
         "associationName": "魔方社",
+        "imgSrc": "/web/file/showImg?location=activityimg/魔方&name=1.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -928,6 +939,7 @@ db.activity.insert(
         "place": "恕园10-101",
         "associationId": ObjectId("5926b1be5abc0621e218cceb"),
         "associationName": "魔方社",
+        "imgSrc": "/web/file/showImg?location=activityimg/魔方&name=2.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -941,6 +953,7 @@ db.activity.insert(
         "place": "恕园11-101",
         "associationId": ObjectId("5926b1be5abc0621e218cceb"),
         "associationName": "魔方社",
+        "imgSrc": "/web/file/showImg?location=activityimg/魔方&name=3.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -954,6 +967,7 @@ db.activity.insert(
         "place": "恕园12-101",
         "associationId": ObjectId("5926b1be5abc0621e218cceb"),
         "associationName": "魔方社",
+        "imgSrc": "/web/file/showImg?location=activityimg/魔方&name=4.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -967,6 +981,7 @@ db.activity.insert(
         "place": "恕园13-101",
         "associationId": ObjectId("5926b1be5abc0621e218cceb"),
         "associationName": "魔方社",
+        "imgSrc": "/web/file/showImg?location=activityimg/魔方&name=5.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -980,6 +995,7 @@ db.activity.insert(
         "place": "恕园9-101",
         "associationId": ObjectId("5926b1be5abc0621e218cced"),
         "associationName": "PS社",
+        "imgSrc": "/web/file/showImg?location=activityimg/PS&name=1.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -993,6 +1009,7 @@ db.activity.insert(
         "place": "恕园10-101",
         "associationId": ObjectId("5926b1be5abc0621e218cced"),
         "associationName": "PS社",
+        "imgSrc": "/web/file/showImg?location=activityimg/PS&name=2.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1006,6 +1023,7 @@ db.activity.insert(
         "place": "恕园11-101",
         "associationId": ObjectId("5926b1be5abc0621e218cced"),
         "associationName": "PS社",
+        "imgSrc": "/web/file/showImg?location=activityimg/PS&name=3.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1019,6 +1037,7 @@ db.activity.insert(
         "place": "恕园12-101",
         "associationId": ObjectId("5926b1be5abc0621e218cced"),
         "associationName": "PS社",
+        "imgSrc": "/web/file/showImg?location=activityimg/PS&name=4.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1032,6 +1051,7 @@ db.activity.insert(
         "place": "恕园13-101",
         "associationId": ObjectId("5926b1be5abc0621e218cced"),
         "associationName": "PS社",
+        "imgSrc": "/web/file/showImg?location=activityimg/PS&name=5.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1045,6 +1065,7 @@ db.activity.insert(
         "place": "恕园13-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccef"),
         "associationName": "读书社",
+        "imgSrc": "/web/file/showImg?location=activityimg/读书&name=1.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1058,6 +1079,7 @@ db.activity.insert(
         "place": "恕园12-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccef"),
         "associationName": "读书社",
+        "imgSrc": "/web/file/showImg?location=activityimg/读书&name=2.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1071,6 +1093,7 @@ db.activity.insert(
         "place": "恕园11-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccef"),
         "associationName": "读书社",
+        "imgSrc": "/web/file/showImg?location=activityimg/读书&name=3.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1084,6 +1107,7 @@ db.activity.insert(
         "place": "恕园10-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccef"),
         "associationName": "读书社",
+        "imgSrc": "/web/file/showImg?location=activityimg/读书&name=4.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1097,6 +1121,7 @@ db.activity.insert(
         "place": "恕园9-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccef"),
         "associationName": "读书社",
+        "imgSrc": "/web/file/showImg?location=activityimg/读书&name=5.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1110,6 +1135,7 @@ db.activity.insert(
         "place": "恕园9-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccec"),
         "associationName": "桌游社",
+        "imgSrc": "/web/file/showImg?location=activityimg/桌游&name=1.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1123,6 +1149,7 @@ db.activity.insert(
         "place": "恕园10-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccec"),
         "associationName": "桌游社",
+        "imgSrc": "/web/file/showImg?location=activityimg/桌游&name=2.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1136,6 +1163,7 @@ db.activity.insert(
         "place": "恕园11-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccec"),
         "associationName": "桌游社",
+        "imgSrc": "/web/file/showImg?location=activityimg/桌游&name=3.jpg",
         "attendingStudent": [],
         "__v": 0
     });
@@ -1149,6 +1177,7 @@ db.activity.insert(
         "place": "恕园12-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccec"),
         "associationName": "桌游社",
+        "imgSrc": "/web/file/showImg?location=activityimg/桌游&name=4.jpg",
         "attendingStudent": [],
         "__v": 0
     });

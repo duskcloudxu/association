@@ -8,6 +8,7 @@ const ActivitySchema = new base.Schema({
     place: String,           //活动地点
     associationId: ObjectId, //承办社团
     associationName: String, //承办社团名字
+    imgSrc: String,          //封面图片的img标签的src
     attendingStudent:[       //参加学生ID
         {
             type: ObjectId,
