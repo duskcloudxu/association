@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Association Admin</title>
+    <title>AIMS</title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,47 +28,86 @@
     <!--angular截图插件-->
     <link rel="stylesheet" href="./lib/ng-img-crop/compile/minified/ng-img-crop.css">
 
-    <link rel="stylesheet" href="./lib/medium-editor/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="./lib/medium-editor/css/themes/default.min.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./lib/medium-editor/css/medium-editor.min.css" type="text/css" media="screen"
+          charset="utf-8">
+    <link rel="stylesheet" href="./lib/medium-editor/css/themes/default.min.css" type="text/css" media="screen"
+          charset="utf-8">
 
     <!-- My css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <!-- apply our angular app to our site -->
 <body ng-app="app" ng-controller="appCtrl">
-<audio src="music/Viva-La-Vida.mp3" loop></audio>
+<!--<audio src="music/Viva-La-Vida.mp3" loop></audio>-->
 <!-- navigation -->
 <!--加上navbar-fixed-top顶栏浮动-->
-<nav class="navbar navbar-inverse nav-style navbar-fixed-top" role="navigation">
-    <div class="home-nav">
-        <a ui-sref="activity" class="association-activity">社团活动</a>
-        <a ui-sref="introduction" class="association-introduction">社团介绍</a>
-        <a ui-sref="dynamics" class="association-news">社团动态</a>
-        <a ui-sref="userCenter.myprofile" ng-click="ClearCenterNav()" class="association-news">我的</a>
-    </div>
-    <!--<div class="navbar-header">-->
-        <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target-menu">-->
-            <!--<span class="sr-only">qieh</span>-->
-            <!--<span class="icon-bar"></span>-->
-            <!--<span class="icon-bar"></span>-->
-            <!--<span class="icon-bar"></span>-->
-        <!--</button>-->
-        <div class="navbar-brand"><a class="fkq-header-title" href="" target="_blank">AIMS</a></div>
-    <!--</div>-->
-    <div class="login-and-register" ng-if="!isLogin">
-        <a ui-sref="login">登录</a>
-        <!--<a ui-sref="register">注册</a>-->
-    </div>
-    <div class="user-image" ng-if="isLogin">
-        <img ng-src="{{headimage}}" alt="个人头像" class="avatar" ui-sref="login">
-    </div>
+<!--<nav class="navbar navbar-inverse nav-style navbar-fixed-top" role="navigation">-->
+<!--<div class="home-nav">-->
+<!--<a ui-sref="activity" class="association-activity">社团活动</a>-->
+<!--<a ui-sref="introduction" class="association-introduction">社团介绍</a>-->
+<!--<a ui-sref="dynamics" class="association-news">社团动态</a>-->
+<!--<a ui-sref="userCenter.myprofile" ng-click="ClearCenterNav()" class="association-news">我的</a>-->
+<!--</div>-->
+<!--&lt;!&ndash;<div class="navbar-header">&ndash;&gt;-->
+<!--&lt;!&ndash;<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target-menu">&ndash;&gt;-->
+<!--&lt;!&ndash;<span class="sr-only">qieh</span>&ndash;&gt;-->
+<!--&lt;!&ndash;<span class="icon-bar"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;<span clfooterass="icon-bar"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;</button>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="navbar-brand"><a class="fkq-header-title" href="" target="_blank">AIMS</a></div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<div class="login-and-register" ng-if="!isLogin">-->
+<!--<a ui-sref="login">登录</a>-->
+<!--&lt;!&ndash;<a ui-sref="register">注册</a>&ndash;&gt;-->
+<!--</div>-->
 
-    <!--<a ui-sref="userCenter.myprofile" ng-click="ClearCenterNav()">用户</a>-->
-            <!--<a ui-sref="about">关于</a>-->
 
+<!--<div class="user-image" ng-if="isLogin">-->
+<!--<img ng-src="{{headimage}}" alt="个人头像" class="avatar" ui-sref="login">-->
+<!--</div>-->
+
+<!--&lt;!&ndash;<a ui-sref="userCenter.myprofile" ng-click="ClearCenterNav()">用户</a>&ndash;&gt;-->
+<!--&lt;!&ndash;<a ui-sref="about">关于</a>&ndash;&gt;-->
+
+<!--</nav>-->
+<!--&lt;!&ndash;加一个没有navbar-fixed-top的防止顶栏浮动导致的内容上移&ndash;&gt;-->
+<!--<nav class="navbar navbar-inverse lightblue" role="navigation"></nav>-->
+
+<div class="brand-top">AIMS</div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#"><div class="">Band</div></a>-->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="activity">社团活动<span class="sr-only">(current)</span></a></li>
+                <li><a ui-sref="introduction">社团介绍</a></li>
+                <li><a ui-sref="dynamics">社团动态</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="login" ng-if="!isLogin">登录</a></li>
+                <li>
+                    <a ui-sref="login" ng-if="isLogin" class="avatar-a">
+                        <img ng-src="{{headimage}}" alt="avatar" class="avatar-image img-circle">
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 </nav>
-<!--加一个没有navbar-fixed-top的防止顶栏浮动导致的内容上移-->
-<nav class="navbar navbar-inverse lightblue" role="navigation"></nav>
 
 <!-- main content -->
 <div class="container">

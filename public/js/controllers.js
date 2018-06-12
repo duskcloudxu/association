@@ -1900,6 +1900,7 @@ angular.module('app.controllers', [])
         $scope.back = function () {
             $state.go(lastState)
         }
+        $scope.cur = 1//当前目录的位置
     })
     .controller('homepageCtrl', function ($scope, $state, $http, $cookieStore, ActivityService, NewsService, $timeout, AssociationService, SystemService) {
         let lastState = $cookieStore.get('currentState');
