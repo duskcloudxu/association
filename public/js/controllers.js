@@ -1588,10 +1588,16 @@ angular.module('app.controllers', [])
         $cookieStore.put('lastState', lastState);
         $cookieStore.put('currentState', 'activityEdit');
 
-        const editor = new MediumEditor('.MediumEditor');
+        const editor = new MediumEditor('.MediumEditor',{
+            placeholder: {
+                text: '',
+                hideOnClick: true
+            }
+        });
 
         // $scope.activity = $cookieStore.get('currentActivity');
         $scope.activity = JSON.parse(sessionStorage.getItem('currentActivity'));
+        document.querySelector('.MediumEditor').innerHTML = $scope.activity.content || '';
         $scope.activity.time = $scope.activity.time && new Date($scope.activity.time);
         // $scope.activity.association = $cookieStore.get('currentAssociation');
         $scope.activity.association = JSON.parse(sessionStorage.getItem('currentAssociation'));
@@ -1646,11 +1652,16 @@ angular.module('app.controllers', [])
         $cookieStore.put('lastState', lastState);
         $cookieStore.put('currentState', 'newsEdit');
 
-        const editor = new MediumEditor('.MediumEditor');
+        const editor = new MediumEditor('.MediumEditor',{
+            placeholder: {
+                text: '',
+                hideOnClick: true
+            }
+        });
 
         // $scope.news = $cookieStore.get('currentNews');
         $scope.news = JSON.parse(sessionStorage.getItem('currentNews'));
-
+        document.querySelector('.MediumEditor').innerHTML = $scope.news.content || '';
         // $scope.association = $cookieStore.get('currentAssociation');
         $scope.association = JSON.parse(sessionStorage.getItem('currentAssociation'));
 
@@ -1690,6 +1701,7 @@ angular.module('app.controllers', [])
 
 
         $scope.submit = function () {
+            $scope.news.content = document.querySelector('.MediumEditor').innerHTML;
             console.log($scope.news);
             if (!$scope.news.content) {
                 swal('出错啦！', '内容不能为空', 'error');
