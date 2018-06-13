@@ -1335,7 +1335,7 @@ db.news.insert(
         "title": "文字特效",
         "content": "<p>视觉创意与设计是设计艺术的一个分支，此类设计通常没有非常明显的商业目的，但由于他为广大设计爱好者提供了广阔的设计空间，因此越来越多的设计<a href=\"http://baike.baidu.com/item/%E7%88%B1%E5%A5%BD%E8%80%85\" target=\"_blank\">爱好者</a>开始学习Photoshop，并进行具有个人特色与风格的视觉创意。<a href=\"http://baike.baidu.com/item/%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1\" target=\"_blank\"><br/> &nbsp;&nbsp;&nbsp; 界面设计</a>是一个新兴的领域，受到越来越多的软件企业及开发者的重视。在当前还没有用于做<a href=\"http://baike.baidu.com/item/%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1\" target=\"_blank\">界面设计</a>的专业软件，因此绝大多数设计者使用的都是该软件。</p><p><br/></p>",
         "associationId": ObjectId("5926b1be5abc0621e218cced"),
-        "imgSrc": "/web/file/showImg?location=newsimg&name=2017-6-7ps (2).jpg",
+        "imgSrc": "/web/file/showImg?location=newsimg&name=2017-6-7ps (4).jpg",
         "time": ISODate("2017-06-07T14:58:35.121Z"),
         "__v": 0
     });

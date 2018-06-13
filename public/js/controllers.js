@@ -1598,6 +1598,8 @@ angular.module('app.controllers', [])
         console.log($scope.activity);
 
         $scope.submit = function () {
+            console.log(document.querySelector('.MediumEditor').innerHTML);
+            $scope.activity.content = document.querySelector('.MediumEditor').innerHTML;
             console.log($scope.activity);
             if (!$scope.activity.content) {
                 swal('出错了！', '活动内容不能为空！', 'error');
