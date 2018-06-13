@@ -76,7 +76,7 @@ db.usersaccount.insert(
         "studentID": "2015210405076",
         "pwd": "lXWIi1pDkYw=",
         "email": "873215214@qq.com",
-        "name": "韦洁",
+        "name": "林一凡",
         "nickname": null,
         "sex": "f",
         "admins": [],
@@ -93,7 +93,7 @@ db.usersaccount.insert(
         "studentID": "2015210405047",
         "pwd": "lXWIi1pDkYw=",
         "email": "970716011@qq.com",
-        "name": "戴雅婕",
+        "name": "林一凡",
         "nickname": null,
         "sex": "f",
         "admins": [],
@@ -1191,6 +1191,7 @@ db.activity.insert(
         "place": "恕园13-101",
         "associationId": ObjectId("5926b1be5abc0621e218ccec"),
         "associationName": "桌游社",
+        "imgSrc": "/web/file/showImg?location=activityimg/桌游&name=5.jpg",
         "attendingStudent": [],
         "__v": 0
     });
