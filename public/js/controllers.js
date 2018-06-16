@@ -1077,7 +1077,7 @@ angular.module('app.controllers', [])
                 p.then(function (data, err) {
                     if (err)
                         swal("删除失败", "未知错误");
-                    swal("删除成功", "该条活动已被删除", "success");
+                    swal("删除成功", "资料已被删除", "success");
                     $state.reload();
                 })
             });
