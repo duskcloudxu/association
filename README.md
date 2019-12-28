@@ -70,7 +70,7 @@ models
     - 　　statement:String,
     - 　　memberId:ObjectId
     - }]
-1. 社团活动 Activity
+1. Activity
     - title: String,           
     - content: String,        
     - time: Date,              
@@ -81,7 +81,7 @@ models
     - 　　type: ObjectId,
     - 　　unique:true
     - }]
-1. 社团动态 News
+1. News
     - title: String,          
     - content: String,        
     - time: {                 
@@ -90,7 +90,7 @@ models
     - },
     - associationId: ObjectId,
     - imgSrc: String,         
-1. 社团文件 File
+1. File
     - 12
     - title: String,         
     - content: String,       
@@ -99,7 +99,7 @@ models
     - 　　type: Date,
     - 　　default:Date.now
     - },
-    - associationId: ObjectId,//所属社团
+    - associationId: ObjectId,
 ### Preview
 Sign in 
 ![登陆](docs/page-design/login.jpg)
